@@ -200,7 +200,7 @@ header{
 }
 
 #headerContact{
-    height: 350px;
+    height: 450 px;
     width: 100%;
     background: rgb(208,235,17);
     background: linear-gradient(90deg, rgba(210, 235, 17, 0.637) 0%, rgba(250,238,0,0.7483368347338936) 5%, rgba(127,218,27,0.908000700280112) 100%);  
@@ -407,34 +407,6 @@ header{
 .Bangrid {
     background-position: 50% 50%;
     background-size: cover;
-}
-#section1item1 {
-    color: blue;
-    font-family: 'Grechen Fuemen', cursive;
-    text-align: center;
-    font-size: 25px;
-    margin-top:215px;
-}
-#section1item2{
-    color: blue;
-    font-family: 'Grechen Fuemen', cursive;
-    text-align: center;
-    font-size: 25px;
-    margin-top:215px;
-}
-#section1item3{
-    color: blue;
-    font-family: 'Grechen Fuemen', cursive;
-    text-align: center;
-    font-size: 25px;
-    margin-top:215px;
-}
-#section1item4{
-    color: blue;
-    font-family: 'Grechen Fuemen', cursive;
-    text-align: center;
-    font-size: 25px;
-    margin-top:215px;
 }
 
 /*---Seccion Entretenimiento----*/
