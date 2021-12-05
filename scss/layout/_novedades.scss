@@ -1,0 +1,27 @@
+.bodyNovedades {
+    background-image: url(https://fondosmil.com/fondo/4595.jpg);
+    background-size:contain;
+    background-position-y: 450px;
+}
+
+section {
+    
+    .gridNovedades {
+        background-color: rgba(15, 194, 218, 0.596);
+        height: 700px;
+        display: grid;
+        grid-template-rows: 200px 10px 490px;
+        font-family:'Grechen Fuemen', cursive;
+        justify-self: center;
+        font-size: 30px;
+        
+        .newsTwo {
+            align-self:center;
+            display:grid;
+            grid-template-columns: repeat(6,224px);
+        }
+        img {
+            margin-left:44px;
+        }
+    }
+}

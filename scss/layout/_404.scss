@@ -1,0 +1,52 @@
+.body404 {
+    background-image: url(imagenes/404_not_found.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.flexNofound {
+    display:flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+
+    p {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        font-weight:bold;
+        display:flex;
+        justify-content: center;
+    }
+
+    h4 {
+        font-family: 'Grechen Fuemen', cursive;
+        border: 5px double blue;
+        color: black;
+        background-color: aqua;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    li {
+        list-style:none;
+        transition: all 800ms;
+    }
+
+    li:hover {
+        transition: all 800ms;
+        transform: scale(1.8);
+    } 
+
+    a {
+        display:flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+}
+
+
+
+
+

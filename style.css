@@ -85,31 +85,10 @@ header{
     border:8px double;
     height: 311px;
 }
-.marginBottom {
-    margin-bottom:20px;
-}
+
 .carousel-inner {
     border: 2px solid black;  
 }
-/*
-.sectionOne {  
-    font-family: 'Gluten', cursive;
-    height: 800 px;
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9304096638655462) 0%, rgba(0,212,255,1) 100%);
-    border: 1px solid #000;
-}
-#flexSectionone {
-    display: flex;
-    margin: 50px 0px;
-}
-.sectionOneitem {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}*/
-
 .sectionTwo {  
     font-family: 'Gluten', cursive;
     height: 800 px;
@@ -126,16 +105,6 @@ header{
    align-items: flex-start;
    margin-bottom: 20px;
    margin-top: 20px;
-}
-
-.section2Item1 {
-    order:1;
-}
-.section2Item2 {
-    order:3;
-}
-.section2Item3 {
-    order:2;
 }
 .divSection2 iframe{
     border: 4px solid #000;
@@ -155,28 +124,10 @@ header{
     font-size: 20px;
 }
 
-/*
-.sectionThree {  
-    font-family: 'Gluten', cursive;
-    height: 800 px;
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9304096638655462) 0%, rgba(0,212,255,1) 100%);
-    border: 1px solid #000;
-}
-#flexSectionthree {
-    display: flex;
-    margin: 50px 0px;
-}
-.sectionThreeitem {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}*/
 .sectionThreebackground {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9304096638655462) 0%, rgba(0,212,255,1) 100%); 
     background-size:cover;
-    font-family: 'Grechen Fuemen', cursive;
+    font-family: 'Gluten', cursive;
     width: 100%;
 }
 .zoom {
@@ -200,14 +151,7 @@ header{
     background-size: cover;
 }
 
-#headerContact{
-    height: 450 px;
-    width: 100%;
-    background: rgb(208,235,17);
-    background: linear-gradient(90deg, rgba(210, 235, 17, 0.637) 0%, rgba(250,238,0,0.7483368347338936) 5%, rgba(127,218,27,0.908000700280112) 100%);  
-}  
-
-.sectionContact1 {
+.sectionContact {
     background-color: rgba(248, 184, 234, 0.616);
 }
 .animate__animated {
@@ -301,10 +245,7 @@ header{
     background-color:#c5b909bb;
     border: 1px solid #000    
 }
-/*
-.sectionNovedades1 {
-    background-color: rgba(15, 194, 218, 0.747);
-}*/
+
 .gridNovedades {
     background-color: rgba(15, 194, 218, 0.596);
     display: grid;
@@ -417,19 +358,14 @@ header{
     background-color:#c5b909d7;
     border: 1px solid #000    
 }
-.sectionEntretenimiento1 {
-    height: 400px;
-    background-color: rgba(15, 194, 218, 0.616);
-}
+
 .flexEntretenimiento {
+    background-color: rgba(15, 194, 218, 0.616);
     display: flex;
     flex-direction:column;
     align-items: center;
     border: 1px solid black;
     height: 400px;
-}
-.imagenesEntretenimiento {
-    margin-top: 40px;
 }
 
 /*-----footer-----*/

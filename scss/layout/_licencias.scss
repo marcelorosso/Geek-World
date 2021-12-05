@@ -1,0 +1,49 @@
+section {
+    .contenedorLicencias {
+        background-color: rgba(15, 194, 218, 0.596);
+        display: grid;
+        grid-template-columns: 670px 670px;
+        grid-template-rows: 300px 300px;
+        gap: 10px 10px;
+        
+        .hotToysgrid {
+            border: 8px solid #000;
+            text-align: center;
+            font-family: 'Gluten', cursive;
+            font-size: 35px; 
+            background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/HOT_TOYS.jpg?v=1600993233);
+            background-position: 50% 70%;
+            background-size: cover;
+        }
+
+        .Irongrid {
+            border: 8px solid #000;
+            text-align: center;
+            font-family: 'Gluten', cursive;
+            font-size: 35px;
+            background-image: url(https://funaticostore.com/wp-content/uploads/2021/06/iron-studio-logo.png);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        .Necagrid {
+            border: 8px solid #000;
+            text-align: center;
+            font-family: 'Gluten', cursive;
+            font-size: 35px;
+            background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/NECA.jpg?v=1600993237);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        .Bangrid {
+            border: 8px solid #000;
+            text-align: center;
+            font-family: 'Gluten', cursive;
+            font-size: 35px;
+            background-image: url(https://cf.shopee.com.my/file/81721cc735907e5d9648b223d70a502e);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+    }
+}

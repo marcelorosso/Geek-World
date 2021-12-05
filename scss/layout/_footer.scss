@@ -1,8 +1,7 @@
 footer {
-    height: 400px;
+    height: 350px;
     width: 100%;
-    background-color: rgb(168, 164, 164);
-    border: 1px solid #000; 
+    background: $gray-500;
 
     #footerFlex {
         display:flex;
@@ -23,17 +22,16 @@ footer {
                 margin-left: 50px;
                 list-style-image: url(imagenes/action_avengers_book_comic_marvel_movie_icon_183140.png);
                 transition: all 400ms;
+            }
 
-                li:hover {
-                    transition: all 400ms;
-                    transform: scale(1.05);
-                }
-                
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
+            li:hover {
+                transition: all 400ms;
+                transform: scale(1.05);
+            }
             
+            a {
+                text-decoration: none;
+                color: black;
             }
         }
         
@@ -43,14 +41,16 @@ footer {
             font-family: cursive;
             align-items: center;
             gap: 20px;
-
-            iframe {
-                border: 2px solid black;
-            }
-
-            img {
-                width: 45px;
-                height: 45px;
+            
+            div {
+                display: flex;
+                flex-direction:row;
+                gap: 15px;
+    
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
 
@@ -65,17 +65,17 @@ footer {
                 font: 20px bolder;
                 color: #000;
                 list-style-image: url(icons/tittle_icon.ico);
-                transition: all 400ms;
+                transition: all 400ms;       
+            }
 
-                li:hover {
-                    transition: all 400ms;
-                    transform: scale(1.05);
-                }
-                
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
+            li:hover {
+                transition: all 400ms;
+                transform: scale(1.05);
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
             }
         }
 
@@ -94,6 +94,16 @@ footer {
 
             li {
                 list-style: none;
+            }
+
+            li:hover {
+                transition: all 400ms;
+                transform: scale(1.05);
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
             }
         }
     }

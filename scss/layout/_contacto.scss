@@ -1,0 +1,97 @@
+.bodyContact {
+    background-image: url(https://images.alphacoders.com/180/thumb-1920-180561.jpg);
+    background-size: repeat;
+    background-position-y: bottom;
+}
+
+.sectionContact {
+    
+    background-color: rgba(248, 184, 234, 0.616);
+    
+    div {
+        display:flex;
+        justify-content: center;
+
+        fieldset {
+            display:flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+            font-family: $profesional-font;
+            font-size: 20px;
+            color: rgb(3, 3, 3);
+            border: double 4px;
+            padding: 20px;
+            
+            form {
+
+                .columnDate {
+                    display:flex;
+                    flex-direction:column;
+                    margin-top: 10px;
+                }
+                    
+                .check {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 10px 0px;
+                }
+
+                .listContact{
+                    display:flex;
+                    flex-direction:column;
+                    margin-bottom: 10px;
+                }
+                .comentariosContact {
+                    display:flex;
+                    flex-direction:column;
+                }
+
+                div {
+                    display:flex;
+                    justify-content:space-evenly;
+
+                    .sendContact {
+                        border: 2px solid black;
+                        font-size: 15px;
+                        padding: 5px;
+                        font-family:monospace;
+                    }
+                    .sendContact:active {
+                        transform:rotate(360deg);
+                    }
+                    .sendContact:hover {
+                        background-color: rgba(128, 128, 128, 0.301);
+                        font-family: 'Grechen Fuemen', cursive;
+                        padding: 5px;
+                        border-radius: 5px;
+                        border: double;
+                        font-weight:bold;
+                        font-size: 20px;
+                        transition: all 1s;
+                    }
+                    .GetOutcontact {
+                        border: 2px solid black;
+                        font-size: 15px;
+                        padding: 5px;
+                        font-family:monospace;
+                    }
+                    .GetOutcontact:active {
+                        transform:rotate(-360deg);
+                    }
+                    .GetOutcontact:hover {
+                        background-color: rgba(128, 128, 128, 0.301);
+                        font-family: 'Grechen Fuemen', cursive;
+                        padding: 5px;
+                        border-radius: 5px;
+                        border: double;
+                        font-weight:bold;
+                        font-size: 20px;
+                        transition: all 1s;
+                    }
+                }
+            } 
+        } 
+    }
+} 
+

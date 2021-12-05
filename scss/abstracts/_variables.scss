@@ -1,0 +1,130 @@
+
+// -------- Own Variables
+
+// font
+
+$default-font: 'Gluten', cursive;
+$custom-font: 'Grechen Fuemen', cursive;
+$profesional-font: Arial, Helvetica, sans-serif;
+
+// text size
+
+$big-text: 1.6rem;
+$medium-text: 1.4rem;
+$normal-text: 1.2rem;
+$small-text: 1rem;
+
+// body color palettes 
+
+$cold-body: linear-gradient(90deg, #22577E 0%,  #5584AC 5%,  #95D1CC 10%, #F6F2D4 100%);
+$spring-body: linear-gradient(90deg, #064635 0%,#519259 5%, #F0BB62 10%, #F4EEA9 100%);
+$vintage-body: linear-gradient(90deg, #8E806A 0%, #C3B091 15%, #E4CDA7 10%, #FFE6BC 100%);
+$own-palett: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9304096638655462) 0%, rgba(0,212,255,1) 100%);
+
+// img size
+
+$big: 550px;
+$normal: 311px;
+$small: 250px;
+
+// -------- Bootstrapp Variables
+
+// title size and bold
+
+$font-size-base:              1rem;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+// font weight
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           200;
+$font-weight-normal:          400;
+$font-weight-bold:            600;
+$font-weight-bolder:          bolder;
+
+// breakpoints (mobile first)
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// colors
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: ();
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+

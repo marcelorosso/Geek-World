@@ -1,0 +1,675 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  margin: 0;
+}
+
+.row > * {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+body {
+  background-color: #adb5bd;
+  font-family: "Gluten", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 450px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#22577E), color-stop(5%, #5584AC), color-stop(10%, #95D1CC), to(#F6F2D4));
+  background: linear-gradient(90deg, #22577E 0%, #5584AC 5%, #95D1CC 10%, #F6F2D4 100%);
+}
+
+header .flexHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 10px;
+}
+
+header .flexHeader img {
+  height: 250px;
+  padding: 5px;
+  border: 5px double;
+}
+
+header .flexHeader div nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+header .flexHeader div nav ul li {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+header .flexHeader div nav ul li:hover {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+header .flexHeader div nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.sectionOnebackground {
+  background-image: url(destacados/section_1.jpg);
+  background-size: cover;
+  font-family: "Gluten", cursive;
+  width: 100%;
+}
+
+.sectionOnebackground .container-fluid .carousel-inner {
+  border: 2px solid black;
+}
+
+.sectionOnebackground .container-fluid .imgCarousel img {
+  height: 550px;
+  width: 100%;
+}
+
+.sectionOnebackground .container-fluid .img-fluid {
+  border: 8px double black;
+  height: 311px;
+}
+
+.sectionTwo {
+  font-family: "Gluten", cursive;
+  height: 800 px;
+  width: 100%;
+  background-color: #adb5bd;
+  margin-bottom: 10px;
+}
+
+.sectionTwo #art1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sectionTwo #art1 article .divSection2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionTwo #art1 article .divSection2 iframe {
+  border: 4px solid #000;
+  padding: 0%;
+  -webkit-box-shadow: 0px 0px 6px 6px skyblue;
+          box-shadow: 0px 0px 6px 6px skyblue;
+}
+
+.sectionTwo #art1 article h3, .sectionTwo #art1 article p {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.sectionThreebackground {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, rgba(9, 9, 121, 0.93041)), to(#00d4ff));
+  background: linear-gradient(90deg, #020024 0%, rgba(9, 9, 121, 0.93041) 0%, #00d4ff 100%);
+  background-size: cover;
+  font-family: "Gluten", cursive;
+  width: 100%;
+}
+
+.sectionThreebackground div .zoom img {
+  -webkit-transition: all 1;
+  transition: all 1;
+}
+
+.sectionThreebackground div .zoom img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  height: 350px;
+  width: 100%;
+  background: #adb5bd;
+}
+
+footer #footerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer #footerFlex .footerCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+footer #footerFlex .footerCategory li {
+  font: 20px bolder;
+  color: #000;
+  height: 40px;
+  margin-left: 50px;
+  list-style-image: url(imagenes/action_avengers_book_comic_marvel_movie_icon_183140.png);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+footer #footerFlex .footerCategory li:hover {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer #footerFlex .footerCategory a {
+  text-decoration: none;
+  color: black;
+}
+
+footer #footerFlex .footerLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+footer #footerFlex .footerLocation div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+}
+
+footer #footerFlex .footerLocation div img {
+  width: 40px;
+  height: 40px;
+}
+
+footer #footerFlex .footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+footer #footerFlex .footerLinks li {
+  font: 20px bolder;
+  color: #000;
+  list-style-image: url(icons/tittle_icon.ico);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+footer #footerFlex .footerLinks li:hover {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer #footerFlex .footerLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+footer #footerFlex .footerContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footerFlex .footerFollow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footerFlex .footerFollow li {
+  list-style: none;
+}
+
+footer #footerFlex .footerFollow li:hover {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer #footerFlex .footerFollow a {
+  text-decoration: none;
+  color: black;
+}
+
+.bodyContact {
+  background-image: url(https://images.alphacoders.com/180/thumb-1920-180561.jpg);
+  background-size: repeat;
+  background-position-y: bottom;
+}
+
+.sectionContact {
+  background-color: rgba(248, 184, 234, 0.616);
+}
+
+.sectionContact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectionContact div fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #030303;
+  border: double 4px;
+  padding: 20px;
+}
+
+.sectionContact div fieldset form .columnDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.sectionContact div fieldset form .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px 0px;
+}
+
+.sectionContact div fieldset form .listContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.sectionContact div fieldset form .comentariosContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sectionContact div fieldset form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sectionContact div fieldset form div .sendContact {
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 5px;
+  font-family: monospace;
+}
+
+.sectionContact div fieldset form div .sendContact:active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.sectionContact div fieldset form div .sendContact:hover {
+  background-color: rgba(128, 128, 128, 0.301);
+  font-family: 'Grechen Fuemen', cursive;
+  padding: 5px;
+  border-radius: 5px;
+  border: double;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.sectionContact div fieldset form div .GetOutcontact {
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 5px;
+  font-family: monospace;
+}
+
+.sectionContact div fieldset form div .GetOutcontact:active {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.sectionContact div fieldset form div .GetOutcontact:hover {
+  background-color: rgba(128, 128, 128, 0.301);
+  font-family: 'Grechen Fuemen', cursive;
+  padding: 5px;
+  border-radius: 5px;
+  border: double;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section .contenedorLicencias {
+  background-color: rgba(15, 194, 218, 0.596);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 670px 670px;
+      grid-template-columns: 670px 670px;
+  -ms-grid-rows: 300px 300px;
+      grid-template-rows: 300px 300px;
+  gap: 10px 10px;
+}
+
+section .contenedorLicencias .hotToysgrid {
+  border: 8px solid #000;
+  text-align: center;
+  font-family: 'Gluten', cursive;
+  font-size: 35px;
+  background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/HOT_TOYS.jpg?v=1600993233);
+  background-position: 50% 70%;
+  background-size: cover;
+}
+
+section .contenedorLicencias .Irongrid {
+  border: 8px solid #000;
+  text-align: center;
+  font-family: 'Gluten', cursive;
+  font-size: 35px;
+  background-image: url(https://funaticostore.com/wp-content/uploads/2021/06/iron-studio-logo.png);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+section .contenedorLicencias .Necagrid {
+  border: 8px solid #000;
+  text-align: center;
+  font-family: 'Gluten', cursive;
+  font-size: 35px;
+  background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/NECA.jpg?v=1600993237);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+section .contenedorLicencias .Bangrid {
+  border: 8px solid #000;
+  text-align: center;
+  font-family: 'Gluten', cursive;
+  font-size: 35px;
+  background-image: url(https://cf.shopee.com.my/file/81721cc735907e5d9648b223d70a502e);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bodyNovedades {
+  background-image: url(https://fondosmil.com/fondo/4595.jpg);
+  background-size: contain;
+  background-position-y: 450px;
+}
+
+section .gridNovedades {
+  background-color: rgba(15, 194, 218, 0.596);
+  height: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 10px 490px;
+      grid-template-rows: 200px 10px 490px;
+  font-family: 'Grechen Fuemen', cursive;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 30px;
+}
+
+section .gridNovedades .newsTwo {
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (224px)[6];
+      grid-template-columns: repeat(6, 224px);
+}
+
+section .gridNovedades img {
+  margin-left: 44px;
+}
+
+.bodyEntretenimiento {
+  background-image: url(https://libero.cronosmedia.glr.pe/original/2021/08/08/61107f72a6da2f0d406b1860.jpg);
+  background-size: contain;
+  background-position-y: 450px;
+}
+
+section .flexEntretenimiento {
+  background-color: rgba(15, 194, 218, 0.616);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  height: 700px;
+}
+
+section .flexEntretenimiento img {
+  margin-left: 44px;
+}
+
+.body404 {
+  background-image: url(imagenes/404_not_found.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.flexNofound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flexNofound p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexNofound h4 {
+  font-family: 'Grechen Fuemen', cursive;
+  border: 5px double blue;
+  color: black;
+  background-color: aqua;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.flexNofound li {
+  list-style: none;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+
+.flexNofound li:hover {
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.flexNofound a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
