@@ -1,11 +1,25 @@
-section {
+.licencias {
+        h3 {
+            padding-top: 25px;
+    }
     .contenedorLicencias {
         background-color: rgba(15, 194, 218, 0.596);
         display: grid;
         grid-template-columns: 670px 670px;
         grid-template-rows: 300px 300px;
         gap: 10px 10px;
-        
+        padding-bottom: 25px;
+        justify-content: center;
+
+        @media (max-width: $xl) {
+            grid-template-columns: 670px;
+            grid-template-rows: 300px 300px 300px 300px;
+        }
+        @media (max-width: $sm) {
+            grid-template-columns: auto;
+            grid-template-rows: 300px 300px 300px 300px;
+        }
+
         .hotToysgrid {
             border: 8px solid #000;
             text-align: center;

@@ -2,9 +2,14 @@
     background-image: url(https://libero.cronosmedia.glr.pe/original/2021/08/08/61107f72a6da2f0d406b1860.jpg);
     background-size:contain;
     background-position-y: 450px;
+
+    @media (max-width: $xl) {
+        background-size: 1750px;
+    }
 }
 
-section {
+section {background-size:contain;
+    background-position-y: 450px;
 
     .flexEntretenimiento {
         background-color: rgba(15, 194, 218, 0.616);
@@ -16,6 +21,11 @@ section {
     
         img {
             margin-left:44px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: $h2-font-size;
         }
     }
 }

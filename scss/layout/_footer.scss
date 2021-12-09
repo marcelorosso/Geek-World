@@ -1,12 +1,38 @@
 footer {
-    height: 350px;
+    height: 400px;
     width: 100%;
     background: $gray-500;
+    padding-top: 25px;
+
+    @media (max-width: $sm) {
+        height: 1100px;
+    }
+
+    @media (min-width: $md) and (max-width: $md) {
+        height: 500px;
+    }
 
     #footerFlex {
         display:flex;
         flex-direction: row;
         justify-content: space-around;
+
+        @media (max-width: $md) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: $md) and (max-width: $lg) {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+        }
+
+        h3 {
+            @media (max-width: $xl) {
+                font-size: $h5-font-size;
+            }
+        }
 
         .footerCategory {
             display: flex;
@@ -14,7 +40,7 @@ footer {
             font-family: cursive;
             align-items: center;
             gap: 10px;
-
+            
             li {
                 font: 20px bolder;
                 color: #000;
@@ -22,16 +48,23 @@ footer {
                 margin-left: 50px;
                 list-style-image: url(imagenes/action_avengers_book_comic_marvel_movie_icon_183140.png);
                 transition: all 400ms;
-            }
 
-            li:hover {
-                transition: all 400ms;
-                transform: scale(1.05);
+                &:hover {
+                    transition: all 400ms;
+                    transform: scale(1.05);
+                }
             }
             
             a {
                 text-decoration: none;
                 color: black;
+
+                strong {
+                    @media (max-width: $xs) {
+                        letter-spacing: 4px;
+                    }
+        
+                }
             }
         }
         
@@ -42,11 +75,20 @@ footer {
             align-items: center;
             gap: 20px;
             
+            iframe {
+                @media (max-width: $xl) {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
             div {
                 display: flex;
                 flex-direction:row;
                 gap: 15px;
-    
+                @media (max-width: $xl) {
+                    flex-direction: column;
+                    align-items: center;
+                }
                 img {
                     width: 40px;
                     height: 40px;
@@ -60,30 +102,55 @@ footer {
             font-family: cursive;
             align-items: center;
             gap: 10px;
-            
+     
             li{
                 font: 20px bolder;
-                color: #000;
-                list-style-image: url(icons/tittle_icon.ico);
-                transition: all 400ms;       
+                color: #000;                
+                transition: all 400ms; 
+                list-style: none;
+                align-items: center;
+                display: flex;
+                margin: 15px 0;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    height: 48px;
+                    width: 48px;
+                    background-image: url(icons/tittle_icon.ico);
+                    margin-right: 10px;
+                }
+                
+                &:hover {
+                    transition: all 400ms;
+                    transform: scale(1.05);
+                }
+
+                img {
+                    @media (max-width: $xl) {
+                        height: 5px;
+                    }
+                }
             }
 
-            li:hover {
-                transition: all 400ms;
-                transform: scale(1.05);
-            }
+            
             
             a {
                 text-decoration: none;
                 color: black;
+
+                strong {
+                    @media (max-width: $xs) {
+                        letter-spacing: 3px;
+                    }
+                }
             }
         }
-
         .footerContact {
             display: flex;
             flex-direction: column;
             font-family: cursive;
             align-items: center;
+            text-align: center;
         }
 
         .footerFollow {
@@ -91,14 +158,20 @@ footer {
             flex-direction: column;
             font-family: cursive;
             align-items: center;
-
+            
+            ul {
+                @media (max-width: $md) {
+                    display: flex;
+                    align-items: baseline;
+                }
+            }
             li {
                 list-style: none;
-            }
-
-            li:hover {
-                transition: all 400ms;
-                transform: scale(1.05);
+        
+                &:hover {
+                    transition: all 400ms;
+                    transform: scale(1.05);
+                }
             }
             
             a {

@@ -2,23 +2,56 @@
     background-image: url(https://fondosmil.com/fondo/4595.jpg);
     background-size:contain;
     background-position-y: 450px;
+
+    @media (max-width: $xl) {
+        background-size: cover;
+    }
 }
 
 section {
-    
+
     .gridNovedades {
         background-color: rgba(15, 194, 218, 0.596);
-        height: 700px;
-        display: grid;
-        grid-template-rows: 200px 10px 490px;
-        font-family:'Grechen Fuemen', cursive;
+        height: auto;
+        font-family: $custom-font;
         justify-self: center;
         font-size: 30px;
+        padding-bottom: 25px;
+
+        div {
+            h2 {
+                @media (max-width: $md) {
+                    font-size: 30px !important;
+                }
+            }
+        }
+
+        .newsTitle {
+            h2 {
+                @media (max-width: $lg) {
+                    font-family: $default-font;
+                    font-size: 20px !important;
+                    margin-top: 15px;
+                }
+            }
+        }
         
         .newsTwo {
-            align-self:center;
-            display:grid;
-            grid-template-columns: repeat(6,224px);
+            display: flex;
+            justify-content: center;
+
+            @media (min-width: $md) and (max-width: $xl) {
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            
+            @media (max-width: $sm) {
+                flex-direction: column;
+                text-align: center;
+            }
+            .noticiasNovedades {
+                margin: 30px;
+            }
         }
         img {
             margin-left:44px;

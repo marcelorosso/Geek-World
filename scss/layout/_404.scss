@@ -2,8 +2,12 @@
     background-image: url(imagenes/404_not_found.png);
     background-size: 100%;
     background-repeat: no-repeat;
-}
 
+    @media (max-width: $sm) {
+        background-size: 900px;
+        background-position: center;
+    }
+}
 
 .flexNofound {
     display:flex;
@@ -11,12 +15,23 @@
     height: 200px;
     justify-content: space-around;
 
+    @media (max-width: $sm) {
+        height: 300px;
+        justify-content: space-between;
+    }
+
     p {
         font-family: 'Courier New', Courier, monospace;
         font-size: 25px;
-        font-weight:bold;
+        font-weight: $font-weight-bold;
         display:flex;
         justify-content: center;
+
+        @media (max-width: $md) {
+            font-size: 20px;
+            text-align: center;
+            margin: 10px 10px;
+        }
     }
 
     h4 {

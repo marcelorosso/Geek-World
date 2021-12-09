@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novedades Geek</title>
+
+    <!-- SEO -->
     <link rel="shortcut icon" href="icons/tittle_icon.ico">
-    
+    <title>Geek World - Novedades</title>
+
+    <meta name="description" content="La mejor tienda virtual de coleccionables de Argentina. Pedilo y te lo enviamos, o visitanos en nuestra web. Las mejores imagenes y videos de superheroes y animé" />
+
+    <meta property="og:site_name" content="Geek World" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Geek World" />
+    <meta property="og:description" content="La mejor tienda virtual de coleccionables de Argentina. Pedilo y te lo enviamos, o visitanos en nuestra web. Las mejores imagenes y videos de superheroes y animé" />
+    <meta property="og:url" content="https://www.geekworld.com" />
+
+    <!--bootstrapp-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
 
-    <!-- incluye animate.css -->
-
+    <!-- animates -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+     <!-- css -->
     <link rel="stylesheet" href="./styles.css">
 
 </head>
@@ -44,35 +55,40 @@
                                 <a class="nav-link" href="https://ar.pinterest.com/search/pins/?q=best%20anime%20images&rs=typed&term_meta[]=best%7Ctyped&term_meta[]=anime%7Ctyped&term_meta[]=images%7Ctyped" target="_blank" style="font-size:medium;">Link Month Anime Images</a>
                               </li>      
                           </div>
-                          <div class="col-3">
-                            <form class="d-flex justify-content-end">
+                          <div class="col-sm-1 col-lg-3 col-md-4">
+                            <form class="d-flex justify-content-end button">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit" style="background-color: black;">Google</button>
+                                <button class="btn btn-outline-success" type="submit" style="background-color: black;"><a target="_blank"  style= "text-decoration: none; color: white;" href="https://www.google.com/">Google</a></button>
                             </form>
                           </div>
                         </div>
                     </nav>
                 </div>
-                
-            </div>
-            
+            </div> 
         </div>
         <div class="flexHeader">
-            <div>
-                <img src="imagenes/geek_world.gif" alt="Logo">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <div>
+                        <img src="imagenes/geek_world.gif" alt="Logo">
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html" target="_self"><em><strong>Home</strong></em></a></li>
+                                <li><a href="Novedades.html" target="_self"><em><strong>Novedades</strong></em></a></li>
+                                <li><a href="Licencias.html" target="_self"><em><strong>Licencias</strong></em></a></li>
+                                <li><a href="entretenimiento.html" target="_self"><em><strong>Entretenimiento</strong></em></a></li>
+                                <li><a href="contacto.html" target="_self"><em><strong>Contacto</strong></em></a></li>
+                            </ul>    
+                        </nav>        
+                    </div>
+                </div>    
+                </div>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" target="_self"><em><strong>Home</strong></em></a></li>
-                        <li><a href="Novedades.html" target="_self"><em><strong>Novedades</strong></em></a></li>
-                        <li><a href="Licencias.html" target="_self"><em><strong>Licencias</strong></em></a></li>
-                        <li><a href="entretenimiento.html" target="_self"><em><strong>Entretenimiento</strong></em></a></li>
-                        <li><a href="contacto.html" target="_self"><em><strong>Contacto</strong></em></a></li>
-                    </ul>    
-                </nav>        
-            </div>
-        </div>
+        <div>
     </header> 
 
     <section>
@@ -84,12 +100,21 @@
                 <h2 style= "font-size: 45px;">Cuadros de Noticias (van a ir dentro de cada grid columna)</h2>
             </div>
             <div class="newsTwo ">
-                <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
-                <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
-                <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
-                <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
-                <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
-                <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
+                <div class="noticiasNovedades">
+                    <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
+                </div>
+                <div class="noticiasNovedades">
+                    <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
+                </div>
+                <div class="noticiasNovedades">
+                    <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
+                </div>
+                <div class="noticiasNovedades">
+                    <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
+                </div>
+                <div class="noticiasNovedades">
+                    <img class="logoSpace " src="imagenes/loadingcircles_102612.ico" alt="enproceso">
+                </div>
             </div>
         </article>
     </section>
@@ -118,7 +143,7 @@
                     <p style="font-size: 20px;">Calle Pública 1 Norte 6920</p>
                 </div>
             </div>
-            <div class="footerLinks ">
+            <div class="footerLinks">
                 <h3>Enlaces Importantes</h3>
                 <ul>
                     <li><a href="#destacados"><em><strong>Destacados</strong></em></a></li>
@@ -130,7 +155,7 @@
                 <h3>Contacto</h3>
                 <p>Se agregarán iconos de contacto</p>
             </div>
-            <div class="footerFollow ">
+            <div class="footerFollow">
                 <h3>Seguinos en...</h3>
                 <ul>
                     <li><a href="https://twitter.com/?lang=es" target="_blank" class="navbar-brand">

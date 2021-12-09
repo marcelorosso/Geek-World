@@ -1,12 +1,18 @@
 .bodyContact {
     background-image: url(https://images.alphacoders.com/180/thumb-1920-180561.jpg);
     background-size: repeat;
-    background-position-y: bottom;
+    background-position-y: 450px;
+
+    @media (max-width: $xl) {
+        background-size: 1800px;
+        background-position: center;
+    }
 }
 
 .sectionContact {
     
     background-color: rgba(248, 184, 234, 0.616);
+    padding: 25px;
     
     div {
         display:flex;
@@ -21,6 +27,7 @@
             color: rgb(3, 3, 3);
             border: double 4px;
             padding: 20px;
+            width: auto;
             
             form {
 
@@ -35,6 +42,10 @@
                     align-items: center;
                     justify-content: space-between;
                     margin-top: 10px 0px;
+
+                    @media (max-width: 375px) {
+                        display: none;
+                    }
                 }
 
                 .listContact{
