@@ -422,11 +422,11 @@ footer {
 
 @media (max-width: 576px) {
   footer {
-    height: 1100px;
+    height: 930px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 795px) {
   footer {
     height: 500px;
   }
@@ -444,7 +444,7 @@ footer #footerFlex {
       justify-content: space-around;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   footer #footerFlex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -456,7 +456,7 @@ footer #footerFlex {
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 577px) and (max-width: 992px) {
   footer #footerFlex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -467,6 +467,8 @@ footer #footerFlex {
             flex-direction: row;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -661,14 +663,14 @@ footer #footerFlex .footerFollow {
           align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 795px) {
   footer #footerFlex .footerFollow ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: inline;
+        -ms-flex-align: inline;
+            align-items: inline;
   }
 }
 
@@ -962,7 +964,7 @@ section .gridNovedades .newsTwo {
           justify-content: center;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 577px) and (max-width: 1200px) {
   section .gridNovedades .newsTwo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
