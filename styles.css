@@ -1043,9 +1043,9 @@ section .flexEntretenimiento h2 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 992px) {
   .body404 {
-    background-size: 200%;
+    background-size: 250%;
     background-position: center;
   }
 }
@@ -1072,7 +1072,7 @@ section .flexEntretenimiento h2 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 992px) {
   .flexNofound {
     height: 400px;
     -webkit-box-pack: justify;
@@ -1093,7 +1093,7 @@ section .flexEntretenimiento h2 {
           justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .flexNofound p {
     font-size: 20px;
     text-align: center;

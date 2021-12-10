@@ -8,8 +8,8 @@
         background-position: center;
     }
 
-    @media (min-width: $md) and (max-width: $md) {
-        background-size: 200%;
+    @media (min-width: 577px) and (max-width: $lg) {
+        background-size: 250%;
         background-position: center;
     }
 }
@@ -25,7 +25,7 @@
         justify-content: space-between;
     }
 
-    @media (min-width: $md) and (max-width: $md) {
+    @media (min-width: 577px) and (max-width: $lg) {
         height: 400px;
         justify-content: space-between;
     }
@@ -37,7 +37,7 @@
         display:flex;
         justify-content: center;
 
-        @media (max-width: $md) {
+        @media (max-width: $lg) {
             font-size: 20px;
             text-align: center;
             margin: 10px 10px;
