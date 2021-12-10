@@ -1038,7 +1038,14 @@ section .flexEntretenimiento h2 {
 
 @media (max-width: 576px) {
   .body404 {
-    background-size: 900px;
+    background-size: 1250px;
+    background-position: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .body404 {
+    background-size: 200%;
     background-position: center;
   }
 }
@@ -1059,6 +1066,15 @@ section .flexEntretenimiento h2 {
 @media (max-width: 576px) {
   .flexNofound {
     height: 300px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .flexNofound {
+    height: 400px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
