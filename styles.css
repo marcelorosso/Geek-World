@@ -850,8 +850,8 @@ footer #footerFlex .footerFollow a {
   background-color: rgba(15, 194, 218, 0.596);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 670px 670px;
-      grid-template-columns: 670px 670px;
+  -ms-grid-columns: 648px 648px;
+      grid-template-columns: 648px 648px;
   -ms-grid-rows: 300px 300px;
       grid-template-rows: 300px 300px;
   gap: 10px 10px;
