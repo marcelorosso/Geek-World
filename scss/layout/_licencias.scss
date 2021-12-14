@@ -1,63 +1,141 @@
 .licencias {
-        h3 {
-            padding-top: 25px;
+    background-color: rgba(25, 240, 240, 0.925);
+
+    h3 {
+        padding-top: 25px;
     }
     .contenedorLicencias {
-        background-color: rgba(15, 194, 218, 0.596);
         display: grid;
-        grid-template-columns: 648px 648px;
-        grid-template-rows: 300px 300px;
-        gap: 10px 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        gap: 10px;
         padding-bottom: 25px;
         justify-content: center;
+        margin: 10px;
 
-        @media (max-width: $xl) {
-            grid-template-columns: 670px;
-            grid-template-rows: 300px 300px 300px 300px;
-        }
-        @media (max-width: $sm) {
-            grid-template-columns: auto;
+        @media (min-width: $xs) and (max-width: $md) {
+            grid-template-columns: 1fr;
             grid-template-rows: 300px 300px 300px 300px;
         }
 
         .hotToysgrid {
-            border: 8px solid #000;
             text-align: center;
             font-family: 'Gluten', cursive;
             font-size: 35px; 
-            background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/HOT_TOYS.jpg?v=1600993233);
-            background-position: 50% 70%;
-            background-size: cover;
+            background-color:rgba(15, 194, 218, 0.596);
+            position: relative;
+            display: flex;
+
+            img {
+                display: block;
+                position: center;
+                height: 100%;
+                width: 100%;
+                border-radius: 0.8rem;
+            }
         }
 
         .Irongrid {
-            border: 8px solid #000;
             text-align: center;
             font-family: 'Gluten', cursive;
             font-size: 35px;
-            background-image: url(https://funaticostore.com/wp-content/uploads/2021/06/iron-studio-logo.png);
-            background-position: 50% 50%;
-            background-size: cover;
+            background-color: rgba(15, 194, 218, 0.596);
+            position: relative;
+            display: flex;
+
+            img {
+                display: block;
+                position: center;
+                height: 100%;
+                width: 100%;
+                border-radius: 0.8rem;
+            }
         }
 
         .Necagrid {
-            border: 8px solid #000;
             text-align: center;
             font-family: 'Gluten', cursive;
             font-size: 35px;
-            background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/NECA.jpg?v=1600993237);
-            background-position: 50% 50%;
-            background-size: cover;
+            background-color: rgba(15, 194, 218, 0.596);
+            position: relative;
+            display: flex;
+
+            img {
+                display: block;
+                position: center;
+                height: 100%;
+                width: 100%;
+                border-radius: 0.8rem;
+            }
         }
 
         .Bangrid {
-            border: 8px solid #000;
             text-align: center;
             font-family: 'Gluten', cursive;
             font-size: 35px;
-            background-image: url(https://cf.shopee.com.my/file/81721cc735907e5d9648b223d70a502e);
-            background-position: 50% 50%;
-            background-size: cover;
+            background-color: rgba(15, 194, 218, 0.596);
+            position: relative;
+            display: flex;
+
+            img {
+                display: block;
+                position: center;
+                height: 100%;
+                width: 100%;
+                border-radius: 0.8rem;
+            }
+        }
+    }
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: $custom-font;
+    font-weight: $font-weight-bold;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 0.8rem;
+
+    div {
+        @media (min-width: $xs) and (max-width: $sm) {
+            font-size: $h3-font-size;
+        }
+    }
+
+    & > * {
+        transform: translateY(20px);
+        transition: transform 1s;
+    }
+
+    &:hover > * {
+        transform: translateY(0px);                    
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    p {
+        font-size: $h5-font-size;
+        margin: 20px;
+
+        @media (min-width: $xs) and (max-width: $sm) {
+            font-size: $tooSmall-text;
+        }
+
+        @media (min-width: $sm) and (max-width: $xl) {
+            font-size: $small-text;
         }
     }
 }

@@ -395,6 +395,10 @@ header .flexHeader div nav ul a {
   }
 }
 
+.sectionThreebackground div .card-body {
+  padding: 2.25rem;
+}
+
 .sectionThreebackground div .card-body .btn-primary {
   -webkit-transition: all 400ms;
   transition: all 400ms;
@@ -842,81 +846,184 @@ footer #footerFlex .footerFollow a {
   transition: all 1s;
 }
 
+.licencias {
+  background-color: rgba(25, 240, 240, 0.925);
+}
+
 .licencias h3 {
   padding-top: 25px;
 }
 
 .licencias .contenedorLicencias {
-  background-color: rgba(15, 194, 218, 0.596);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 648px 648px;
-      grid-template-columns: 648px 648px;
-  -ms-grid-rows: 300px 300px;
-      grid-template-rows: 300px 300px;
-  gap: 10px 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 350px 350px;
+      grid-template-rows: 350px 350px;
+  gap: 10px;
   padding-bottom: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .licencias .contenedorLicencias {
-    -ms-grid-columns: 670px;
-        grid-template-columns: 670px;
-    -ms-grid-rows: 300px 300px 300px 300px;
-        grid-template-rows: 300px 300px 300px 300px;
-  }
-}
-
-@media (max-width: 576px) {
-  .licencias .contenedorLicencias {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 300px 300px 300px 300px;
         grid-template-rows: 300px 300px 300px 300px;
   }
 }
 
 .licencias .contenedorLicencias .hotToysgrid {
-  border: 8px solid #000;
   text-align: center;
   font-family: 'Gluten', cursive;
   font-size: 35px;
-  background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/HOT_TOYS.jpg?v=1600993233);
-  background-position: 50% 70%;
-  background-size: cover;
+  background-color: rgba(15, 194, 218, 0.596);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.licencias .contenedorLicencias .hotToysgrid img {
+  display: block;
+  position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
 }
 
 .licencias .contenedorLicencias .Irongrid {
-  border: 8px solid #000;
   text-align: center;
   font-family: 'Gluten', cursive;
   font-size: 35px;
-  background-image: url(https://funaticostore.com/wp-content/uploads/2021/06/iron-studio-logo.png);
-  background-position: 50% 50%;
-  background-size: cover;
+  background-color: rgba(15, 194, 218, 0.596);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.licencias .contenedorLicencias .Irongrid img {
+  display: block;
+  position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
 }
 
 .licencias .contenedorLicencias .Necagrid {
-  border: 8px solid #000;
   text-align: center;
   font-family: 'Gluten', cursive;
   font-size: 35px;
-  background-image: url(http://cdn.shopify.com/s/files/1/0453/1657/1293/collections/NECA.jpg?v=1600993237);
-  background-position: 50% 50%;
-  background-size: cover;
+  background-color: rgba(15, 194, 218, 0.596);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.licencias .contenedorLicencias .Necagrid img {
+  display: block;
+  position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
 }
 
 .licencias .contenedorLicencias .Bangrid {
-  border: 8px solid #000;
   text-align: center;
   font-family: 'Gluten', cursive;
   font-size: 35px;
-  background-image: url(https://cf.shopee.com.my/file/81721cc735907e5d9648b223d70a502e);
-  background-position: 50% 50%;
-  background-size: cover;
+  background-color: rgba(15, 194, 218, 0.596);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.licencias .contenedorLicencias .Bangrid img {
+  display: block;
+  position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Grechen Fuemen", cursive;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  border-radius: 0.8rem;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .imageOverlay div {
+    font-size: 1.75rem;
+  }
+}
+
+.imageOverlay > * {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.imageOverlay:hover > * {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.imageOverlay:hover {
+  opacity: 1;
+}
+
+.imageOverlay p {
+  font-size: 1.25rem;
+  margin: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .imageOverlay p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .imageOverlay p {
+    font-size: 1rem;
+  }
 }
 
 .bodyNovedades {
