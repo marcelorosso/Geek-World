@@ -27,11 +27,7 @@
             display: flex;
 
             img {
-                display: block;
-                position: center;
-                height: 100%;
-                width: 100%;
-                border-radius: 0.8rem;
+                @include imgInside-box (100%, auto)
             }
         }
 
@@ -44,11 +40,7 @@
             display: flex;
 
             img {
-                display: block;
-                position: center;
-                height: 100%;
-                width: 100%;
-                border-radius: 0.8rem;
+                @include imgInside-box (100%, auto)
             }
         }
 
@@ -61,11 +53,7 @@
             display: flex;
 
             img {
-                display: block;
-                position: center;
-                height: 100%;
-                width: 100%;
-                border-radius: 0.8rem;
+                @include imgInside-box (100%, auto);
             }
         }
 
@@ -78,52 +66,19 @@
             display: flex;
 
             img {
-                display: block;
-                position: center;
-                height: 100%;
-                width: 100%;
-                border-radius: 0.8rem;
+                @include imgInside-box (100%, auto)
             }
         }
     }
 }
 
 .imageOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(5px);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: $custom-font;
-    font-weight: $font-weight-bold;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 1s;
-    border-radius: 0.8rem;
+    @include imageOverlay (rgba(0, 0, 0, 0.6), blur(5px), 0.8rem);
 
     div {
         @media (min-width: $xs) and (max-width: $sm) {
             font-size: $h3-font-size;
         }
-    }
-
-    & > * {
-        transform: translateY(20px);
-        transition: transform 1s;
-    }
-
-    &:hover > * {
-        transform: translateY(0px);                    
-    }
-
-    &:hover {
-        opacity: 1;
     }
 
     p {

@@ -161,7 +161,7 @@ footer {
             align-items: center;
             
             ul {
-                @media (min-width: $sm) and (max-width: 795px) {
+                @media (min-width: $xs) and (max-width: 795px) {
                     display: flex;
                     align-items: inline;
                 }

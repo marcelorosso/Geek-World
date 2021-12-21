@@ -56,11 +56,22 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.img, .releaseNews div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imgBootstrap, section .flexEntretenimiento .animeGrid .item1 img, section .flexEntretenimiento .animeGrid .item2 img, section .flexEntretenimiento .animeGrid .item3 img, section .flexEntretenimiento .animeGrid .item4 img, section .flexEntretenimiento .animeGrid .item5 img, section .flexEntretenimiento .animeGrid .item6 img, section .flexEntretenimiento .animeGrid .item7 img, section .flexEntretenimiento .animeGrid .item8 img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 2rem !important;
+}
+
 header {
   height: 480px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#22577E), color-stop(5%, #5584AC), color-stop(10%, #95D1CC), to(#F6F2D4));
-  background: linear-gradient(90deg, #22577E 0%, #5584AC 5%, #95D1CC 10%, #F6F2D4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #009DAE), color-stop(80%, #71DFE7), to(#C2FFF9));
+  background: linear-gradient(180deg, #009DAE 35%, #71DFE7 80%, #C2FFF9 100%);
 }
 
 @media (max-width: 768px) {
@@ -275,12 +286,9 @@ header .flexHeader div nav ul a {
   font-family: "Gluten", cursive;
   height: auto;
   width: 100%;
-  background-color: #adb5bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5584AC), color-stop(75%, #95D1CC), color-stop(90%, #F6F2D4), to(#F6F6F6));
+  background: linear-gradient(180deg, #5584AC 0%, #95D1CC 75%, #F6F2D4 90%, #F6F6F6 100%);
   margin-bottom: 10px;
-}
-
-.sectionTwo #momentos_epicos {
-  margin-top: 25px;
 }
 
 .sectionTwo #art1 {
@@ -300,7 +308,7 @@ header .flexHeader div nav ul a {
           align-items: flex-start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .sectionTwo #art1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -309,29 +317,24 @@ header .flexHeader div nav ul a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 
-.sectionTwo #art1 article .divSection2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .sectionTwo #art1 article .divSection2 iframe {
-  border: 4px solid #000;
   padding: 0%;
-  -webkit-box-shadow: 0px 0px 6px 6px skyblue;
-          box-shadow: 0px 0px 6px 6px skyblue;
+  -webkit-box-shadow: 0px 0px 8px 8px lightgray;
+          box-shadow: 0px 0px 8px 8px lightgray;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .sectionTwo #art1 article .divSection2 iframe {
     width: 280px;
     height: 280px;
@@ -360,8 +363,8 @@ header .flexHeader div nav ul a {
 }
 
 .sectionThreebackground {
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, rgba(9, 9, 121, 0.93041)), to(#00d4ff));
-  background: linear-gradient(90deg, #020024 0%, rgba(9, 9, 121, 0.93041) 0%, #00d4ff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8E806A), color-stop(15%, #C3B091), color-stop(40%, #E4CDA7), color-stop(80%, #FFE6BC));
+  background: linear-gradient(180deg, #8E806A 0%, #C3B091 15%, #E4CDA7 40%, #FFE6BC 80%);
   background-size: cover;
   font-family: "Gluten", cursive;
   width: 100%;
@@ -667,7 +670,7 @@ footer #footerFlex .footerFollow {
           align-items: center;
 }
 
-@media (min-width: 576px) and (max-width: 795px) {
+@media (min-width: 320px) and (max-width: 795px) {
   footer #footerFlex .footerFollow ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -892,9 +895,9 @@ footer #footerFlex .footerFollow a {
 .licencias .contenedorLicencias .hotToysgrid img {
   display: block;
   position: center;
-  height: 100%;
-  width: 100%;
   border-radius: 0.8rem;
+  width: 100%;
+  height: auto;
 }
 
 .licencias .contenedorLicencias .Irongrid {
@@ -911,9 +914,9 @@ footer #footerFlex .footerFollow a {
 .licencias .contenedorLicencias .Irongrid img {
   display: block;
   position: center;
-  height: 100%;
-  width: 100%;
   border-radius: 0.8rem;
+  width: 100%;
+  height: auto;
 }
 
 .licencias .contenedorLicencias .Necagrid {
@@ -930,9 +933,9 @@ footer #footerFlex .footerFollow a {
 .licencias .contenedorLicencias .Necagrid img {
   display: block;
   position: center;
-  height: 100%;
-  width: 100%;
   border-radius: 0.8rem;
+  width: 100%;
+  height: auto;
 }
 
 .licencias .contenedorLicencias .Bangrid {
@@ -949,12 +952,27 @@ footer #footerFlex .footerFollow a {
 .licencias .contenedorLicencias .Bangrid img {
   display: block;
   position: center;
-  height: 100%;
-  width: 100%;
   border-radius: 0.8rem;
+  width: 100%;
+  height: auto;
 }
 
 .imageOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex;
+          flex-direction: flex;
+  -ms-flex-wrap: column;
+      flex-wrap: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -964,31 +982,17 @@ footer #footerFlex .footerFollow a {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   font-family: "Grechen Fuemen", cursive;
   font-weight: 600;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
   border-radius: 0.8rem;
-}
-
-@media (min-width: 320px) and (max-width: 576px) {
-  .imageOverlay div {
-    font-size: 1.75rem;
-  }
 }
 
 .imageOverlay > * {
@@ -1009,6 +1013,12 @@ footer #footerFlex .footerFollow a {
   opacity: 1;
 }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .imageOverlay div {
+    font-size: 1.75rem;
+  }
+}
+
 .imageOverlay p {
   font-size: 1.25rem;
   margin: 20px;
@@ -1027,42 +1037,52 @@ footer #footerFlex .footerFollow a {
 }
 
 .bodyNovedades {
-  background-image: url(https://fondosmil.com/fondo/4595.jpg);
-  background-size: contain;
-  background-position-y: 450px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFC7C7), color-stop(15%, #FFE2E2), color-stop(40%, #F6F6F6), color-stop(80%, #8785A2));
+  background: linear-gradient(180deg, #FFC7C7 0%, #FFE2E2 15%, #F6F6F6 40%, #8785A2 80%);
 }
 
-@media (max-width: 1200px) {
-  .bodyNovedades {
-    background-size: cover;
-  }
+section {
+  position: relative;
 }
 
-section .gridNovedades {
-  background-color: rgba(15, 194, 218, 0.596);
+section .flexNovedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
   font-family: "Grechen Fuemen", cursive;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   font-size: 30px;
   padding-bottom: 25px;
 }
 
 @media (max-width: 768px) {
-  section .gridNovedades div h2 {
+  section .flexNovedades div h2 {
     font-size: 30px !important;
   }
 }
 
 @media (max-width: 992px) {
-  section .gridNovedades .newsTitle h2 {
+  section .flexNovedades .newsTitle h2 {
     font-family: "Gluten", cursive;
     font-size: 20px !important;
     margin-top: 15px;
   }
 }
 
-section .gridNovedades .newsTwo {
+section .flexNovedades .newsTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,7 +1092,7 @@ section .gridNovedades .newsTwo {
 }
 
 @media (min-width: 577px) and (max-width: 1200px) {
-  section .gridNovedades .newsTwo {
+  section .flexNovedades .newsTwo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
@@ -1080,7 +1100,7 @@ section .gridNovedades .newsTwo {
 }
 
 @media (max-width: 576px) {
-  section .gridNovedades .newsTwo {
+  section .flexNovedades .newsTwo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1089,18 +1109,120 @@ section .gridNovedades .newsTwo {
   }
 }
 
-section .gridNovedades .newsTwo .noticiasNovedades {
-  margin: 30px;
+section .flexNovedades .newsTwo .noticiasNovedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
 }
 
-section .gridNovedades img {
-  margin-left: 44px;
+.releaseNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  margin: 20px;
+  border-radius: 4rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .releaseNews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.releaseNews div {
+  width: 100%;
+}
+
+.releaseNews div img {
+  border-radius: 4rem;
+}
+
+.releaseNews .card-bodies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  color: white;
+  gap: 20px;
+}
+
+.releaseNews .card-bodies h4 {
+  font-size: 2rem;
+}
+
+.releaseNews .card-bodies .btn-primary {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.releaseNews .card-bodies .btn-primary:hover {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  color: white;
+  background-color: #4dc247;
+  -webkit-box-shadow: 2px 2px 6px lightgray;
+          box-shadow: 2px 2px 6px lightgray;
+  border-radius: 50%;
 }
 
 .bodyEntretenimiento {
   background-image: url(https://libero.cronosmedia.glr.pe/original/2021/08/08/61107f72a6da2f0d406b1860.jpg);
-  background-size: contain;
-  background-position-y: 450px;
+  background-size: cover;
 }
 
 @media (max-width: 1200px) {
@@ -1126,17 +1248,122 @@ section .flexEntretenimiento {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
-  height: 700px;
+  height: 400px;
 }
 
-section .flexEntretenimiento img {
-  margin-left: 44px;
+section .flexEntretenimiento:active {
+  height: 1950px;
+}
+
+section .flexEntretenimiento a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
+
+section .flexEntretenimiento .animeGrid {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  margin: 5px;
+}
+
+section .flexEntretenimiento .animeGrid .item1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+section .flexEntretenimiento .animeGrid .item2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+section .flexEntretenimiento .animeGrid .item3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+section .flexEntretenimiento .animeGrid .item4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  z-index: 1;
+}
+
+section .flexEntretenimiento .animeGrid .item4 img:active {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 5px solid black;
+}
+
+section .flexEntretenimiento .animeGrid .item5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+section .flexEntretenimiento .animeGrid .item6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+section .flexEntretenimiento .animeGrid .item6 img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section .flexEntretenimiento .animeGrid .item6 img:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border: 5px solid black;
+}
+
+section .flexEntretenimiento .animeGrid .item7 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+section .flexEntretenimiento .animeGrid .item8 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
 }
 
 section .flexEntretenimiento h2 {
   margin-top: 25px;
-  font-size: 2rem;
 }
 
 .body404 {

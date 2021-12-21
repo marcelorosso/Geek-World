@@ -17,10 +17,12 @@ $tooSmall-text: 0.8rem;
 
 // body color palettes 
 
-$cold-body: linear-gradient(90deg, #22577E 0%,  #5584AC 5%,  #95D1CC 10%, #F6F2D4 100%);
-$spring-body: linear-gradient(90deg, #064635 0%,#519259 5%, #F0BB62 10%, #F4EEA9 100%);
-$vintage-body: linear-gradient(90deg, #8E806A 0%, #C3B091 15%, #E4CDA7 10%, #FFE6BC 100%);
-$own-palett: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9304096638655462) 0%, rgba(0,212,255,1) 100%);
+$cold-body: linear-gradient(180deg, #5584AC 0%,  #95D1CC 75%, #F6F2D4 90%, #F6F6F6 100%);
+$spring-body: linear-gradient(180deg, #064635 0%,#519259 75%, #F0BB62 90%, #F4EEA9 100%);
+$vintage-body: linear-gradient(180deg, #8E806A 0%, #C3B091 15%, #E4CDA7 40%, #FFE6BC 80%);
+$pink-palett: linear-gradient(180deg, #FFC7C7 0%, #FFE2E2 15%, #F6F6F6 40%, #8785A2 80%);
+$own-palett: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9304096638655462) 0%, rgba(0,212,255,1) 100%);
+$tropical-palett: linear-gradient(180deg, #009DAE 35%, #71DFE7 80%, #C2FFF9 100%);
 
 // img size
 

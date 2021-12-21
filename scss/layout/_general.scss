@@ -61,3 +61,14 @@ p {
     font-family: $profesional-font;
     
 }
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgBootstrap {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 2rem !important; 
+}

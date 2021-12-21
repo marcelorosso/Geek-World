@@ -1,12 +1,12 @@
 header {
     height: 480px;
     width: 100%;
-    background: $cold-body; 
+    background: $tropical-palett; 
 
     @media (max-width: $md) {
         height: 700px;
     }
-
+    
     #navbarSupportedContent {
         display: block;
     }
@@ -30,7 +30,7 @@ header {
     
             }
         }
-       
+
         div {
             nav {
                 ul {
@@ -75,8 +75,7 @@ header {
     transition: all 400ms;
     
     &:hover {
-            transition: all 400ms;
-            transform: scale(1.15);
-            
+        transition: all 400ms;
+        transform: scale(1.15);            
     } 
 }
