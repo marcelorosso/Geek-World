@@ -20,8 +20,15 @@
 // body general design
 
 body {
-    background-color: $gray-500;
     font-family: $default-font;
+}
+
+footer {
+    background-color: white;
+}
+
+main {
+    background-color: white;
 }
 
 // text design
@@ -56,19 +63,57 @@ h5 {
     text-align: center;
 }
 
+span {
+    font-size: $small-text;
+    font-family: $profesional-font;
+    color: $gray-700;
+    text-align: center;
+}
+
 p {
     font-size: $small-text;
     font-family: $profesional-font;
-    
+    color: $gray-700;
+    text-align: center;
 }
+
+a {
+    color: $gray-600;
+    font-family: $profesional-font;
+}
+
+//--extend--//
 
 .img {
     max-width: 100%;
     height: auto;
 }
 
+//--gallery images effects
+
 .imgBootstrap {
     width: 100% !important;
     height: 100% !important;
-    border-radius: 2rem !important; 
+    border-radius: 2rem !important;
+    box-shadow: -3px 5px 15px #000 !important;
+    cursor: pointer !important;
 }
+
+.icon {
+    color: $gray-700;
+    font-size: 6.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+//--hover scale
+
+.navbar-brand {
+    transition: all 400ms;
+    
+    &:hover {
+        transition: all 400ms;
+        transform: scale(1.15);            
+    } 
+}
+

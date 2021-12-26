@@ -8,6 +8,8 @@
     align-items: $align;
 }
 
+//--mixin img--//
+
 @mixin imgInside-box ($width, $height) {
     display: block;
     position: center;
@@ -15,6 +17,8 @@
     width: $width;
     height: $height;
 }
+
+//--mixin overlay--//
 
 @mixin imageOverlay ($background, $backdrop-filter, $border-radius) {
     @include flexBox(flex, column, center, center);
@@ -49,3 +53,23 @@
         opacity: 1;
     }
 }
+
+//--mixin text--//
+
+@mixin text($color, $size, $weight, $align, $transform, $stretch) {
+    color: $color;
+    font: {
+        family: $default-font;
+        size: $size;
+        weight: $weight;
+        stretch: $stretch;
+    }
+    text: {
+        align: $align;
+        transform: $transform;
+        decoration: none;
+    }
+    line-height: 1.5;
+}
+
+

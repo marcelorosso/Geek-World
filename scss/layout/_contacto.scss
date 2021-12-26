@@ -1,15 +1,14 @@
-.bodyContact {
+
+//---CONTACT
+
+.sectionContact {
     background-image: url(https://images.alphacoders.com/180/thumb-1920-180561.jpg);
     background-size: repeat;
-    background-position-y: 450px;
 
     @media (max-width: $xl) {
         background-size: 1800px;
         background-position: center;
     }
-}
-
-.sectionContact {
     
     background-color: rgba(248, 184, 234, 0.616);
     padding: 25px;
@@ -24,7 +23,7 @@
             letter-spacing: 1px;
             font-family: $profesional-font;
             font-size: 20px;
-            color: rgb(3, 3, 3);
+            color: white;
             border: double 4px;
             padding: 20px;
             width: auto;
@@ -63,7 +62,7 @@
                     justify-content:space-evenly;
 
                     .sendContact {
-                        border: 2px solid black;
+                        border: 3px solid white;
                         font-size: 15px;
                         padding: 5px;
                         font-family:monospace;
@@ -72,7 +71,7 @@
                         transform:rotate(360deg);
                     }
                     .sendContact:hover {
-                        background-color: rgba(128, 128, 128, 0.301);
+                        background-color: white;
                         font-family: 'Grechen Fuemen', cursive;
                         padding: 5px;
                         border-radius: 5px;
@@ -82,7 +81,7 @@
                         transition: all 1s;
                     }
                     .GetOutcontact {
-                        border: 2px solid black;
+                        border: 3px solid white;
                         font-size: 15px;
                         padding: 5px;
                         font-family:monospace;
@@ -91,7 +90,7 @@
                         transform:rotate(-360deg);
                     }
                     .GetOutcontact:hover {
-                        background-color: rgba(128, 128, 128, 0.301);
+                        background-color: white;
                         font-family: 'Grechen Fuemen', cursive;
                         padding: 5px;
                         border-radius: 5px;
@@ -105,4 +104,7 @@
         } 
     }
 } 
+
+
+
 

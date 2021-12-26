@@ -3,12 +3,27 @@ header {
     width: 100%;
     background: $tropical-palett; 
 
-    @media (max-width: $md) {
+    @media (max-width: 575px) {
+        height: 770px;
+    }
+    @media (min-width: $sm) and (max-width: $md) {
         height: 700px;
     }
     
     #navbarSupportedContent {
         display: block;
+        
+        @media (min-width: 577px) and (max-width: 767px) {
+            justify-content: center;
+            font-weight: bold;
+            align-items: center;
+        }
+        .dissapear {
+
+            @media (min-width: 577px) and (max-width: 767px) {
+                display: none;
+            }
+        }
     }
     
     .flexHeader {
@@ -27,7 +42,6 @@ header {
                 height: 250px;
                 padding: 5px;
                 border: 5px double;
-    
             }
         }
 
@@ -44,12 +58,6 @@ header {
                     @media (max-width: $md) {
                         display:flex;
                         flex-direction: column;
-                        font-size: $h3-font-size;
-                        font-family: $default-font;
-                    }
-
-                    @media (max-width: $sm) {
-                        font-size: $h5-font-size;
                     }
                     
                     li {
@@ -62,8 +70,19 @@ header {
                     }
                     
                     a {
+                        font-family: $custom-font;
+                        font-size: 30px;
                         text-decoration: none;
                         color: black;
+
+                        @media (max-width: $md) {
+                            font-size: $h3-font-size;
+                            font-family: $default-font;
+                        }
+
+                        @media (max-width: $sm) {
+                            font-size: $h5-font-size;
+                        }
                     }
                 }
             }
@@ -76,6 +95,10 @@ header {
     
     &:hover {
         transition: all 400ms;
-        transform: scale(1.15);            
+        transform: scale(1.05);
     } 
+
+    a {
+        font-family: $default-font;
+    }   
 }

@@ -84,6 +84,7 @@
     p {
         font-size: $h5-font-size;
         margin: 20px;
+        color: white;
 
         @media (min-width: $xs) and (max-width: $sm) {
             font-size: $tooSmall-text;

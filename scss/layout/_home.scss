@@ -189,9 +189,11 @@ main {
         }
         .card-body {
 
-            padding: 2.25rem;
+            padding: 1.50rem;
 
             .btn-primary {
+                font-family: $default-font;
+
                 transition: all 400ms;
 
                 &:hover {
