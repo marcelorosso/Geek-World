@@ -1,5 +1,6 @@
+// -------------------- FOOTER
 
-//---CONTACT
+// background
 
 .sectionContact {
     background-image: url(https://images.alphacoders.com/180/thumb-1920-180561.jpg);
@@ -13,9 +14,13 @@
     background-color: rgba(248, 184, 234, 0.616);
     padding: 25px;
     
+// box
+
     div {
         display:flex;
         justify-content: center;
+
+    // fieldset properties
 
         fieldset {
             display:flex;
@@ -27,7 +32,9 @@
             border: double 4px;
             padding: 20px;
             width: auto;
-            
+
+    // form properties
+
             form {
 
                 .columnDate {
@@ -57,6 +64,8 @@
                     flex-direction:column;
                 }
 
+    // send-rest button properties and hover
+    
                 div {
                     display:flex;
                     justify-content:space-evenly;

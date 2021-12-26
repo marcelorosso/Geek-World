@@ -1,10 +1,14 @@
+// -------------------- 404
+
+// body background
+
 .body404 {
     background-image: url(imagenes/404_not_found.png);
     background-size: 100%;
     background-repeat: no-repeat;
 
     @media (max-width: $sm) {
-        background-size: 1250px;
+        background-size: 1500px;
         background-position: center;
     }
 
@@ -14,11 +18,13 @@
     }
 }
 
+// caja flex
+
 .flexNofound {
-    display:flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-around;
+    @include flexBox (column, wrap, space-around, center);
+    height: auto;
+    margin: 25px;
+
 
     @media (max-width: $sm) {
         height: 300px;
@@ -33,7 +39,7 @@
     p {
         font-family: 'Courier New', Courier, monospace;
         font-size: 25px;
-        font-weight: $font-weight-bold;
+        font-family: $default-font;
         display:flex;
         justify-content: center;
 
@@ -45,22 +51,24 @@
     }
 
     h4 {
-        font-family: 'Grechen Fuemen', cursive;
-        border: 5px double blue;
-        color: black;
-        background-color: aqua;
+        border-radius: 2rem;
+        border: 2px solid gray;
+        color: white;
+        background-color: black;
         padding: 15px;
         font-size: 20px;
     }
 
+// hover
+
     li {
         list-style:none;
-        transition: all 800ms;
+        transition: all 1s;
     }
 
     li:hover {
-        transition: all 800ms;
-        transform: scale(1.8);
+        transition: all 1s;
+        transform: scale(1.2);
     } 
 
     a {

@@ -1,3 +1,5 @@
+// -------------------- GENERAL PROPERTIES
+
 // reset
 
 * {
@@ -29,6 +31,14 @@ footer {
 
 main {
     background-color: white;
+}
+
+main {
+    @media (max-width: $md) {
+        h2 {
+            font-family: $custom-font;
+        }
+    }
 }
 
 // text design
@@ -82,14 +92,14 @@ a {
     font-family: $profesional-font;
 }
 
-//--extend--//
+//--EXTENDS
 
 .img {
     max-width: 100%;
     height: auto;
 }
 
-//--gallery images effects
+// gallery images effects
 
 .imgBootstrap {
     width: 100% !important;
@@ -106,7 +116,7 @@ a {
     text-align: center;
 }
 
-//--hover scale
+// hover scale
 
 .navbar-brand {
     transition: all 400ms;

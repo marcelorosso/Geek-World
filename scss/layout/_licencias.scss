@@ -1,9 +1,14 @@
+// -------------------- LICENCIAS
+
 .licencias {
     background-color: rgba(25, 240, 240, 0.925);
 
     h3 {
         padding-top: 25px;
     }
+
+    // General Grid
+
     .contenedorLicencias {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -17,34 +22,10 @@
             grid-template-columns: 1fr;
             grid-template-rows: 300px 300px 300px 300px;
         }
+    
+    // flex box properties
 
-        .hotToysgrid {
-            text-align: center;
-            font-family: 'Gluten', cursive;
-            font-size: 35px; 
-            background-color:rgba(15, 194, 218, 0.596);
-            position: relative;
-            display: flex;
-
-            img {
-                @include imgInside-box (100%, auto)
-            }
-        }
-
-        .Irongrid {
-            text-align: center;
-            font-family: 'Gluten', cursive;
-            font-size: 35px;
-            background-color: rgba(15, 194, 218, 0.596);
-            position: relative;
-            display: flex;
-
-            img {
-                @include imgInside-box (100%, auto)
-            }
-        }
-
-        .Necagrid {
+        .flexGrid {
             text-align: center;
             font-family: 'Gluten', cursive;
             font-size: 35px;
@@ -54,19 +35,6 @@
 
             img {
                 @include imgInside-box (100%, auto);
-            }
-        }
-
-        .Bangrid {
-            text-align: center;
-            font-family: 'Gluten', cursive;
-            font-size: 35px;
-            background-color: rgba(15, 194, 218, 0.596);
-            position: relative;
-            display: flex;
-
-            img {
-                @include imgInside-box (100%, auto)
             }
         }
     }

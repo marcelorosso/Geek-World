@@ -1,15 +1,11 @@
-main {
-    @media (max-width: $md) {
-        h2 {
-            font-family: $custom-font;
-        }
-    }
-}
+// -------------------- HOME
 
-
-// section one 
+//-- section one 
 
 .sectionOnebackground {
+
+    // background
+
     background-image: url(destacados/section_1.jpg);
     background-size: cover;
     font-family: $default-font;
@@ -37,6 +33,10 @@ main {
             padding-left: 0%;
             padding-right: 0%;
         }
+    
+    //--section one first part
+    
+    // carousel    
 
         .carousel-inner {
             border: 2px solid black;
@@ -76,6 +76,8 @@ main {
         }
     }
 
+    //--section one second part 
+
     .destacadosMes {
         justify-content: space-around;
 
@@ -103,7 +105,7 @@ main {
     }
 }
 
-// section two
+//-- section two
 
 .sectionTwo {
     font-family: $default-font;
@@ -112,6 +114,8 @@ main {
     background: $cold-body;
     margin-bottom: 10px;
 
+    // box
+
     #art1 {
         @include flexBox (row, nowrap, space-around, flex-start);
 
@@ -119,10 +123,10 @@ main {
             @include flexBox (column, wrap, center, center);
         }
 
+    // videos (iframe)
+
         article {
-
             .divSection2 {
-
                 iframe {     
                     padding: 0%;
                     box-shadow: 0px 0px 8px 8px lightgray;
@@ -154,7 +158,7 @@ main {
     }
 }
 
-// section three
+//-- section three
 
 .sectionThreebackground {
     background: $vintage-body; 
@@ -166,17 +170,22 @@ main {
         margin-top: 25px;
     }
 
+    // effects
+
     div {
         .zoom {
             img {
                 transition: all 400ms;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                     transition: all 400ms;
                 }
             }
         }
+    
+    // cards differents properties
+
         .card-text {
             @media (min-width: $md) and (max-width: $lg) {
                 min-height: 288px;    
@@ -188,12 +197,11 @@ main {
             }
         }
         .card-body {
-
+            @include flexBox (column, wrap, space-around, center);
             padding: 1.50rem;
 
             .btn-primary {
                 font-family: $default-font;
-
                 transition: all 400ms;
 
                 &:hover {
@@ -201,9 +209,9 @@ main {
                     transform: scale(1.15);
                 }
             }
-
-            @media (min-width: $xl) {
-                height: 300px;   
+            
+            @media (min-width: $lg) {
+                height: 400px;   
             }
         }
     }

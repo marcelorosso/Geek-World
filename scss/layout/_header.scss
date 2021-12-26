@@ -1,3 +1,5 @@
+// -------------------- HEADER
+
 header {
     height: 480px;
     width: 100%;
@@ -10,6 +12,8 @@ header {
         height: 700px;
     }
     
+    // navbar
+
     #navbarSupportedContent {
         display: block;
         
@@ -26,10 +30,27 @@ header {
         }
     }
     
+    .navbar-brand {
+        transition: all 400ms;
+        
+        &:hover {
+            transition: all 400ms;
+            transform: scale(1.01);
+        } 
+    
+        a {
+            font-family: $default-font;
+        }   
+    }
+
+    // logo and menu
+    
     .flexHeader {
         display: flex;
         flex-direction: column;
         margin: 10px 10px;
+
+        // logo
 
         div {
 
@@ -44,6 +65,8 @@ header {
                 border: 5px double;
             }
         }
+
+        // menu
 
         div {
             nav {
@@ -88,17 +111,4 @@ header {
             }
         }  
     }
-}
-
-.navbar-brand {
-    transition: all 400ms;
-    
-    &:hover {
-        transition: all 400ms;
-        transform: scale(1.05);
-    } 
-
-    a {
-        font-family: $default-font;
-    }   
 }

@@ -1,3 +1,6 @@
+// -------------------- ENTRETENIMIENTO
+
+// common properties
 
 section {
 
@@ -14,6 +17,8 @@ section {
             
         }
 
+//-- grid box
+
         .animeGrid {
             display: grid;
             gap: 30px;
@@ -22,6 +27,8 @@ section {
             @media (max-width: 600px) {
                 @include flexBox (column, wrap, center, center);
             }
+
+// grid areas
 
             .item1 {
                 grid-column: 1/2;
@@ -64,9 +71,17 @@ section {
             }
         }
 
+    // images properties
+
         img {
             @extend .imgBootstrap;
-            @extend .navbar-brand;
+            transition: all 400ms;
+
+            &:hover {
+                transition: all 400ms;
+                transform: scale(1.05);
+            }
+
         }
         
         h2 {
@@ -76,10 +91,6 @@ section {
     }
 }
 
-.iframeBox {
-    @include flexBox (row, wrap, space-evenly, center);
-    margin: 25px;
-}
 
 
 

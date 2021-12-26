@@ -1,5 +1,8 @@
 //---LOGIN CSS
 
+
+// main login properties
+
 .login-box {
     position: absolute;
     top: 50%;
@@ -51,6 +54,8 @@
                     0 0 100px #03e9f4;
     }
 
+// span properties
+
     span {
         position: absolute;
         display: block;
@@ -96,6 +101,8 @@
     }
 }
 
+// user box properties
+
 .user-box {
     position: relative;
 
@@ -131,7 +138,7 @@
     }
 }
 
-//---key frames
+// key frames
 
 
 @keyframes btn-anim1 {

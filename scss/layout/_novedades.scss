@@ -1,8 +1,13 @@
+// -------------------- NOVEDADES
 
+
+// background
 
 .sectionNews {
     background: $pink-palett;
     position: relative;
+
+// box
 
     .flexNovedades {
         @include flexBox (column, nowrap, center, center);
@@ -35,6 +40,8 @@
     }
 }
 
+// card box
+
 .releaseNews {
     @include flexBox (row, nowrap, center, center);
     background-color: black;
@@ -47,6 +54,8 @@
         min-width: 0;
     }
     
+    // image properties
+
     div {
         width: 100%;
         img {
@@ -62,6 +71,8 @@
         }
     } 
     
+    // card body properties
+
     .card-bodies {
         @include flexBox (column, nowrap, center, center);
         height: auto;
@@ -76,6 +87,8 @@
         h4 {
             font-size: $h2-font-size;
         }
+
+    // button hover and properties
 
         .btn-primary {
             transition: all 400ms;
