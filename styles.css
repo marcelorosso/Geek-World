@@ -165,8 +165,8 @@ header .navbar-brand {
 header .navbar-brand:hover {
   -webkit-transition: all 400ms;
   transition: all 400ms;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 header .navbar-brand a {
@@ -1317,7 +1317,7 @@ section .flexEntretenimiento img:hover {
 }
 
 section .flexEntretenimiento h2 {
-  margin-top: 25px;
+  margin: 28px;
 }
 
 .body404 {

