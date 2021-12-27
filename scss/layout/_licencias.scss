@@ -40,6 +40,8 @@
     }
 }
 
+    // image overlay
+    
 .imageOverlay {
     @include imageOverlay (rgba(0, 0, 0, 0.6), blur(5px), 0.8rem);
 
